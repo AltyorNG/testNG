@@ -1,0 +1,5282 @@
+Date;Time;Batch;PN;SN;Software_Version;Hardware_Version;TB_Version;Operator;ID;MAC_Addr;Name group;Name Test;Limit Low;Value;Limit High;Result
+2024/03/27;04h42m33s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;
+2024/03/27;04h43m00s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Setting;True;Write Product ID;;FE08690003020686;;Read Product ID;06;06;06;Write Brand ID;;FE086B0003040220;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A6E000303060505B1;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01
+2024/03/27;04h43m46s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Setting;True;Write Product ID;;FE087100030206AD;;Read Product ID;06;06;06;Write Brand ID;;FE0873000304020B;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A7600030306050588;;Read HW Version;;060505;;Mode Test;True;Eco Mode;;FE08780000500251;;Value Eco;205;219,295904;240;Confort Mode;;FE0879000050013A;;Value Confort;0;1,961220;15;Calibration;True;Reset Calibration Voltage;;FE0B7A000310000000007D;;Reset Calibration Current;;FE0B7B000311000000000C;;Voltage;210;218,307906;240;Current;3;5,311397;6;Read Power;0%;1301;100%;Voltage;210;218,304954;240;Calibration Voltage;;FE0B7D000310C154030008;;Current;3;5,313384;6;Calibration Current;;FE0B7E000311C1140000E6;;Read Power;0%;1147;2%
+2024/03/27;04h44m38s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.223
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.812
+
+MCU Reset
+
+Software reset is performed
+
+RUNNING Program ... 
+  Address:      : 0x8000000
+Application is running, Please Hold on...
+Start operation achieved successfully
+;;Setting;True;Write Product ID;;FE088000030206C6;;Read Product ID;06;06;06;Write Brand ID;;FE08820003040260;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A8500030306050553;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;False;Eco Mode;;FE088C00005002D7;;Value Eco;205;1,951588;240;Confort Mode;;FE088F0000500178;;Value Confort;0;1,955065;15;Calibration;False;Reset Calibration Voltage;;FE0B9200031000000000E8;;Reset Calibration Current;;FE0B9500031100000000F3;;Voltage;210;218,385977;240;Current;3;5,304571;6;Read Power;0%;0;100%;Voltage;210;218,327015;240;Calibration Voltage;;FE0B9B000310D75403007C;;Current;3;5,305708;6;Calibration Current;;FE0B9E000311BA14000053;;Read Power;0%;0;2%
+2024/03/27;04h49m17s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.226
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.807
+
+MCU Reset
+
+Software reset is performed
+
+RUNNING Program ... 
+  Address:      : 0x8000000
+Application is running, Please Hold on...
+Start operation achieved successfully
+;;Setting;True;Write Product ID;;FE08A20003020666;;Read Product ID;06;06;06;Write Brand ID;;FE08A4000304024F;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0AA70003030605054B;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;False;Eco Mode;;FE08AD00005002D1;;Value Eco;205;1,938959;240;Confort Mode;;FE08B0000050011E;;Value Confort;0;1,946433;15;Calibration;False;Reset Calibration Voltage;;FE0BB30003100000000095;;Reset Calibration Current;;FE0BB600031100000000A8;;Voltage;210;218,378517;240;Current;3;5,324092;6;Read Power;0%;0;100%;Voltage;210;218,381430;240;Calibration Voltage;;FE0BBC0003100D55030051;;Current;3;5,324879;6;Calibration Current;;FE0BBF000311CD1400007E;;Read Power;0%;0;2%
+2024/03/27;04h50m57s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.225
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.812
+
+MCU Reset
+
+Software reset is performed
+
+RUNNING Program ... 
+  Address:      : 0x8000000
+Application is running, Please Hold on...
+Start operation achieved successfully
+;;Setting;True;Write Product ID;;FE08C300030206A8;;Read Product ID;06;06;06;Write Brand ID;;FE08C50003040281;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0AC800030306050556;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;False;Eco Mode;;FE08CE00005002DB;;Value Eco;205;1,930526;240;Confort Mode;;FE08D100005001D0;;Value Confort;0;1,933203;15;Calibration;False;Reset Calibration Voltage;;FE0BD4000310000000005E;;Reset Calibration Current;;FE0BD70003110000000009;;Voltage;210;218,405246;240;Current;3;5,353555;6;Read Power;0%;0;100%;Voltage;210;218,357135;240;Calibration Voltage;;FE0BDD000310F554030028;;Current;3;5,353578;6;Calibration Current;;FE0BE0000311EA140000D8;;Read Power;0%;0;2%
+2024/03/27;04h52m31s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.38V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.219
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.812
+
+MCU Reset
+
+Software reset is performed
+
+RUNNING Program ... 
+  Address:      : 0x8000000
+Application is running, Please Hold on...
+Start operation achieved successfully
+;;Setting;True;Write Product ID;;FE08E400030206E5;;Read Product ID;06;06;06;Write Brand ID;;FE08E60003040243;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0AE900030306050528;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;False;Eco Mode;;FE08EF00005002DD;;Value Eco;205;1,948071;240;Confort Mode;;FE08F20000500112;;Value Confort;0;1,948870;15;Calibration;False;Reset Calibration Voltage;;FE0BF50003100000000023;;Reset Calibration Current;;FE0BF80003110000000086;;Voltage;210;218,291111;240;Current;3;5,360024;6;Read Power;0%;0;100%;Voltage;210;218,208333;240;Calibration Voltage;;FE0BFE000310605403006B;;Current;3;5,362118;6;Calibration Current;;FE0B1001000311F2140000B6;;Read Power;0%;0;2%
+2024/03/27;04h53m42s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.217
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.813
+
+MCU Reset
+
+Software reset is performed
+
+RUNNING Program ... 
+  Address:      : 0x8000000
+Application is running, Please Hold on...
+Start operation achieved successfully
+;;Setting;False;Write Product ID;;FE0810070003020610;
+2024/03/27;04h56m52s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.38V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.227
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.815
+
+MCU Reset
+
+Software reset is performed
+
+RUNNING Program ... 
+  Address:      : 0x8000000
+Application is running, Please Hold on...
+Start operation achieved successfully
+;;Setting;True;Write Product ID;;FE08000003020651;;Read Product ID;06;06;06;Write Brand ID;;FE080200030402F7;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A05000303060505D9;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;False;Eco Mode;;FE080B0000500269;;Value Eco;205;1,953626;240;Confort Mode;;FE080E000050018D;;Value Confort;0;1,961300;15;Calibration;False;Reset Calibration Voltage;;FE0B110003100000000062;;Reset Calibration Current;;FE0B14000311000000005F;;Voltage;210;218,306829;240;Current;3;5,310693;6;Read Power;0%;0;100%;Voltage;210;218,277029;240;Calibration Voltage;;FE0B1A000310A5540300CE;;Current;3;5,309369;6;Calibration Current;;FE0B1D000311BD140000BB;;Read Power;0%;0;2%
+2024/03/27;04h59m53s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;False;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 0.01V
+Error: No STM32 target found! If your product embeds Debug Authentication, please perform a discovery using Debug Authentication
+;
+2024/03/27;05h02m06s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.36V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.222
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.814
+
+MCU Reset
+
+Software reset is performed
+
+RUNNING Program ... 
+  Address:      : 0x8000000
+Application is running, Please Hold on...
+Start operation achieved successfully
+;;Setting;True;Write Product ID;;FE08210003020657;;Read Product ID;06;06;06;Write Brand ID;;FE082300030402F1;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A260003030605051E;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;False;Eco Mode;;FE082C0000500224;;Value Eco;205;1,919415;240;Confort Mode;;FE082F000050018B;;Value Confort;0;1,917896;15;Calibration;False;Reset Calibration Voltage;;FE0B320003100000000039;;Reset Calibration Current;;FE0B350003110000000022;;Voltage;210;218,083586;240;Current;3;5,305249;6;Read Power;0%;0;100%;Voltage;210;218,123719;240;Calibration Voltage;;FE0B3B0003100C540300EA;;Current;3;5,305703;6;Calibration Current;;FE0B3E000311BA14000082;;Read Power;0%;0;2%
+2024/03/27;05h04m27s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.227
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.817
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE0842000302065D;;Read Product ID;06;06;06;Write Brand ID;;FE08440003040274;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A4700030306050525;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;False;Eco Mode;;FE084D00005002EA;;Value Eco;205;1,911421;240;Confort Mode;;FE08500000500125;;Value Confort;0;1,911381;15;Calibration;False;Reset Calibration Voltage;;FE0B530003100000000098;;Reset Calibration Current;;FE0B5600031100000000A5;;Voltage;210;218,151963;240;Current;3;5,308029;6;Read Power;0%;0;100%;Voltage;210;218,099663;240;Calibration Voltage;;FE0B5C000310F453030084;;Current;3;5,308809;6;Calibration Current;;FE0B5F000311BD14000041;;Read Power;0%;0;2%
+2024/03/27;05h06m32s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.221
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.818
+;
+2024/03/27;05h08m50s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.36V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xAA (Level 0, no protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Warning: Option Byte: rdp, value: 0xAA, was not modified.
+
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.001
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.823
+;
+2024/03/27;05h19m11s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xAA (Level 0, no protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Warning: Option Byte: rdp, value: 0xAA, was not modified.
+
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.001
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.822
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE08010003020633;;Read Product ID;06;06;06;Write Brand ID;;FE08030003040295;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A06000303060505BF;;Read HW Version;;060505;;Mode Test;False;Eco Mode;;FE080A000050020B;;Value Eco;205;1,983001;240;Confort Mode;;FE080D000050012B;;Value Confort;0;1,984240;15;Calibration;False;Reset Calibration Voltage;;FE0B100003100000000071;;Reset Calibration Current;;FE0B130003110000000026;;Voltage;210;218,215553;240;Current;3;5,306839;6;Read Power;0%;0;100%;Voltage;210;218,212960;240;Calibration Voltage;;FE0B190003106554030051;;Current;3;5,308825;6;Calibration Current;;FE0B1C000311BD140000A8;;Read Power;0%;0;2%
+2024/03/27;05h20m36s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.35V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xAA (Level 0, no protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Warning: Option Byte: rdp, value: 0xAA, was not modified.
+
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.001
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.819
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE08200003020635;;Read Product ID;06;06;06;Write Brand ID;;FE08220003040293;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A2500030306050578;;Read HW Version;;060505;;Mode Test;False;Eco Mode;;FE082900005002C9;;Value Eco;205;1,991553;240;Confort Mode;;FE082C000050012D;;Value Confort;0;1,993471;15;Calibration;False;Reset Calibration Voltage;;FE0B2F00031000000000C9;;Reset Calibration Current;;FE0B32000311000000005B;;Voltage;210;218,188984;240;Current;3;5,308259;6;Read Power;0%;0;100%;Voltage;210;218,219702;240;Calibration Voltage;;FE0B380003106C5403008A;;Current;3;5,310066;6;Calibration Current;;FE0B3B000311BE14000085;;Read Power;0%;0;2%
+2024/03/27;05h21m55s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.36V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xAA (Level 0, no protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Warning: Option Byte: rdp, value: 0xAA, was not modified.
+
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.002
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.820
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE083F0003020637;;Read Product ID;06;06;06;Write Brand ID;;FE08410003040299;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A4400030306050543;;Read HW Version;;060505;;Mode Test;False;Eco Mode;;FE08480000500207;;Value Eco;205;2,021485;240;Confort Mode;;FE084B00005001A8;;Value Confort;0;2,021445;15;Calibration;False;Reset Calibration Voltage;;FE0B4E0003100000000068;;Reset Calibration Current;;FE0B5100031100000000DC;;Voltage;210;218,194490;240;Current;3;5,308810;6;Read Power;0%;0;100%;Voltage;210;218,188665;240;Calibration Voltage;;FE0B570003104D54030001;;Current;3;5,309004;6;Calibration Current;;FE0B5A000311BD1400001E;;Read Power;0%;0;2%
+2024/03/27;05h24m49s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.35V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xAA (Level 0, no protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Warning: Option Byte: rdp, value: 0xAA, was not modified.
+
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.001
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.828
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE085E00030206F9;;Read Product ID;06;06;06;Write Brand ID;;FE0860000304029F;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A63000303060505F1;;Read HW Version;;060505;;Mode Test;False;Eco Mode;;FE08670000500253;;Value Eco;205;2,024602;240;Confort Mode;;FE086A00005001AE;;Value Confort;0;2,024921;15;Calibration;False;Reset Calibration Voltage;;FE0B6D0003100000000033;;Reset Calibration Current;;FE0B7000031100000000A1;;Voltage;210;218,105847;240;Current;3;5,306818;6;Read Power;0%;0;100%;Voltage;210;218,125634;240;Calibration Voltage;;FE0B760003100E540300DD;;Current;3;5,305786;6;Calibration Current;;FE0B79000311BA14000027;;Read Power;0%;0;2%
+2024/03/27;05h26m02s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.36V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xAA (Level 0, no protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Warning: Option Byte: rdp, value: 0xAA, was not modified.
+
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.001
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.820
+
+MCU Reset
+
+Software reset is performed
+;
+2024/03/27;05h28m43s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xAA (Level 0, no protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x0 (Boot from Flash if BOOT0 = 0, otherwise Embedded SRAM1) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Warning: Option Byte: rdp, value: 0xAA, was not modified.
+
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.001
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.818
+
+MCU Reset
+
+Software reset is performed
+;
+2024/03/27;05h44m19s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.35V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x0 (Boot from Flash if BOOT0 = 0, otherwise Embedded SRAM1) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.216
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.820
+;
+2024/03/27;05h46m19s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xAA (Level 0, no protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x0 (Boot from Flash if BOOT0 = 0, otherwise Embedded SRAM1) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Warning: Option Byte: rdp, value: 0xAA, was not modified.
+
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.001
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.821
+;;Setting;True;Write Product ID;;FE088000030206C6;;Read Product ID;06;06;06;Write Brand ID;;FE08820003040260;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A8500030306050553;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;False;Eco Mode;;FE088B00005002FE;;Value Eco;205;1,845987;240;Confort Mode;;FE088E000050011A;;Value Confort;0;1,846427;15;Calibration;False;Reset Calibration Voltage;;FE0B9100031000000000DD;;Reset Calibration Current;;FE0B9400031100000000E0;;Voltage;210;218,181843;240;Current;3;5,319868;6;Read Power;0%;0;100%;Voltage;210;218,202149;240;Calibration Voltage;;FE0B9A0003105A540300A0;;Current;3;5,321028;6;Calibration Current;;FE0B9D000311C91400006E;;Read Power;0%;0;2%
+2024/03/27;05h50m56s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.35V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Core reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x0 (Boot from Flash if BOOT0 = 0, otherwise Embedded SRAM1) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.215
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.817
+;;Setting;True;Write Product ID;;FE08A100030206C0;;Read Product ID;06;06;06;Write Brand ID;;FE08A30003040266;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0AA600030306050594;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;False;Eco Mode;;FE08AC00005002B3;;Value Eco;205;1,842629;240;Confort Mode;;FE08AF000050011C;;Value Confort;0;1,839751;15;Calibration;False;Reset Calibration Voltage;;FE0BB20003100000000086;;Reset Calibration Current;;FE0BB5000311000000009D;;Voltage;210;218,120528;240;Current;3;5,312685;6;Read Power;0%;0;100%;Voltage;210;218,119410;240;Calibration Voltage;;FE0BBB00031007540300DF;;Current;3;5,313196;6;Calibration Current;;FE0BBE000311C114000085;;Read Power;0%;0;2%
+2024/03/27;05h56m50s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Core reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x0 (Boot from Flash if BOOT0 = 0, otherwise Embedded SRAM1) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.214
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.819
+;
+2024/03/27;05h58m17s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;False;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Core reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xAA (Level 0, no protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x0 (Boot from Flash if BOOT0 = 0, otherwise Embedded SRAM1) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+Warning: Option Byte: rdp, value: 0xAA, was not modified.
+
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.001
+
+Mass erase ... 
+
+Error: Mass erase operation failed.
+Please verify flash protection
+;
+2024/03/27;05h59m40s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.36V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Core reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xAA (Level 0, no protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x0 (Boot from Flash if BOOT0 = 0, otherwise Embedded SRAM1) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Warning: Option Byte: rdp, value: 0xAA, was not modified.
+
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.001
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.817
+;;Setting;True;Write Product ID;;FE08C200030206CA;;Read Product ID;06;06;06;Write Brand ID;;FE08C400030402E3;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0AC7000303060505AF;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;True;Eco Mode;;FE08CC000050021F;;Value Eco;205;219,119336;240;Confort Mode;;FE08CD0000500174;;Value Confort;0;1,862096;15;Calibration;True;Reset Calibration Voltage;;FE0BCE00031000000000D7;;Reset Calibration Current;;FE0BCF00031100000000A6;;Voltage;210;218,077203;240;Current;3;5,332470;6;Read Power;0%;1294;100%;Voltage;210;218,060807;240;Calibration Voltage;;FE0BD1000310CD530300F3;;Current;3;5,333586;6;Calibration Current;;FE0BD2000311D6140000E6;;Read Power;0%;1151;2%
+2024/03/27;06h01m21s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.36V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Core reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x0 (Boot from Flash if BOOT0 = 0, otherwise Embedded SRAM1) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.216
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.813
+;
+2024/03/27;06h03m23s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.36V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xAA (Level 0, no protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x0 (Boot from Flash if BOOT0 = 0, otherwise Embedded SRAM1) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Warning: Option Byte: rdp, value: 0xAA, was not modified.
+
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.000
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.820
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE08D500030206D1;;Read Product ID;06;06;06;Write Brand ID;;FE08D70003040277;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0ADA0003030605053C;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;True;Eco Mode;;FE08DF000050028B;;Value Eco;205;218,969696;240;Confort Mode;;FE08E000005001E4;;Value Confort;0;1,962899;15;Calibration;True;Reset Calibration Voltage;;FE0BE10003100000000058;;Reset Calibration Current;;FE0BE2000311000000000F;;Voltage;210;218,112509;240;Current;3;5,349835;6;Read Power;0%;1312;100%;Voltage;210;218,066033;240;Calibration Voltage;;FE0BE4000310D253030040;;Current;3;5,348249;6;Calibration Current;;FE0BE5000311E414000043;;Read Power;0%;1152;2%
+2024/03/27;06h08m21s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.36V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x0 (Boot from Flash if BOOT0 = 0, otherwise Embedded SRAM1) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.218
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.808
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE08E70003020643;;Read Product ID;06;06;06;Write Brand ID;;FE08E90003040273;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0AEC00030306050582;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;False;Eco Mode;;FE08F2000050021B;;Value Eco;205;1,943555;240;Confort Mode;;FE08F5000050013B;;Value Confort;0;1,941077;15;Calibration;False;Reset Calibration Voltage;;FE0BF800031000000000E4;;Reset Calibration Current;;FE0BFB00031100000000B3;;Voltage;210;218,099544;240;Current;3;5,306433;6;Read Power;0%;0;100%;Voltage;210;218,163054;240;Calibration Voltage;;FE0B100100031033540300D1;;Current;3;5,307454;6;Calibration Current;;FE0B1004000311BB140000D4;;Read Power;0%;0;2%
+2024/03/27;06h09m21s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.36V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x0 (Boot from Flash if BOOT0 = 0, otherwise Embedded SRAM1) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.225
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.814
+
+MCU Reset
+
+Software reset is performed
+;;Setting;False;Write Product ID;;FE08100A00030206E4;;Read Product ID;06;;06;Write Brand ID;;FE0811000003040272;;Read Brand ID;02;;02
+2024/03/27;06h10m55s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xAA (Level 0, no protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x0 (Boot from Flash if BOOT0 = 0, otherwise Embedded SRAM1) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Warning: Option Byte: rdp, value: 0xAA, was not modified.
+
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.000
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.828
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE08000003020651;;Read Product ID;06;06;06;Write Brand ID;;FE080200030402F7;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A05000303060505D9;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;True;Eco Mode;;FE080A000050020B;;Value Eco;205;219,086264;240;Confort Mode;;FE080B0000500160;;Value Confort;0;1,934682;15;Calibration;True;Reset Calibration Voltage;;FE0B0C0003100000000092;;Reset Calibration Current;;FE0B0D00031100000000E3;;Voltage;210;218,033680;240;Current;3;5,304982;6;Read Power;0%;1299;100%;Voltage;210;218,015967;240;Calibration Voltage;;FE0B0F000310A0530300FE;;Current;3;5,305528;6;Calibration Current;;FE0B10000311BA1400001E;;Read Power;0%;1161;2%
+2024/03/27;06h12m03s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x0 (Boot from Flash if BOOT0 = 0, otherwise Embedded SRAM1) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.222
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.821
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE081200030206A7;;Read Product ID;06;06;06;Write Brand ID;;FE0814000304028E;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A17000303060505B3;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;True;Eco Mode;;FE081B000050025B;;Value Eco;205;219,132301;240;Confort Mode;;FE081C000050017B;;Value Confort;0;1,952987;15;Calibration;True;Reset Calibration Voltage;;FE0B1D00031000000000B6;;Reset Calibration Current;;FE0B1E00031100000000E1;;Voltage;210;218,041339;240;Current;3;5,315642;6;Read Power;0%;1291;100%;Voltage;210;218,068586;240;Calibration Voltage;;FE0B20000310D55303000D;;Current;3;5,316874;6;Calibration Current;;FE0B21000311C5140000B4;;Read Power;0%;1147;2%
+2024/03/27;13h56m33s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.39V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.221
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.835
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE08230003020693;;Read Product ID;06;06;06;Write Brand ID;;FE082500030402BA;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A2800030306050538;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02
+2024/03/27;13h57m11s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.38V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.221
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.836
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE082C00030206A3;;Read Product ID;06;06;06;Write Brand ID;;FE082E0003040205;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A31000303060505DE;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01
+2024/03/27;13h58m00s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.38V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xAA (Level 0, no protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Warning: Option Byte: rdp, value: 0xAA, was not modified.
+
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.001
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.833
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE08340003020688;;Read Product ID;06;06;06;Write Brand ID;;FE0836000304022E;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A3900030306050534;;Read HW Version;;060505;
+2024/03/27;13h59m41s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;False;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 0.01V
+Error: No STM32 target found! If your product embeds Debug Authentication, please perform a discovery using Debug Authentication
+;
+2024/03/27;14h00m45s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.219
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.826
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE083B00030206B8;;Read Product ID;06;06;06;Write Brand ID;;FE083D0003040291;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A4000030306050536;;Read HW Version;;060505;
+2024/03/27;14h02m52s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xAA (Level 0, no protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Warning: Option Byte: rdp, value: 0xAA, was not modified.
+
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.001
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.820
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE0842000302065D;;Read Product ID;06;06;06;Write Brand ID;;FE08440003040274;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A4700030306050525;;Read HW Version;;060505;;Calibration;False;Reset Calibration Voltage;;FE0B4B0003100000000037;;Reset Calibration Current;;FE0B4E000311000000000A;;Voltage;210;218,150633;240;Current;3;5,250364;6;Read Power;0%;100;100%;Voltage;210;218,185161;240;Calibration Voltage;;FE0B54000310495403006C;;Current;3;5,250281;6;Calibration Current;;FE0B5700031182140000A2;;Read Power;0%;100;2%
+2024/03/27;14h05m22s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.39V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.221
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.797
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE085B0003020614;;Read Product ID;06;06;06;Write Brand ID;;FE085D000304023D;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A6000030306050597;;Read HW Version;;060505;;Calibration;False;Reset Calibration Voltage;;FE0B6400031000000000B8;;Reset Calibration Current;;FE0B6700031100000000EF;;Voltage;210;218,072585;240;Current;3;5,224666;6;Read Power;0%;100;100%;Voltage;210;218,085235;240;Calibration Voltage;;FE0B6D000310E5530300BF;;Current;3;5,224424;6;Calibration Current;;FE0B70000311681400004D;;Read Power;0%;100;2%
+2024/03/27;14h12m02s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xAA (Level 0, no protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Warning: Option Byte: rdp, value: 0xAA, was not modified.
+
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.001
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.818
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE08740003020640;;Read Product ID;06;06;06;Write Brand ID;;FE087600030402E6;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A7900030306050571;;Read HW Version;;060505;;BP Test;False;Result Press;01;01;01;Result Press;02;01;02
+2024/03/27;14h13m12s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.38V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.223
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.834
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE087D000302063B;;Read Product ID;06;06;06;Write Brand ID;;FE087F000304029D;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A8200030306050540;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02
+2024/03/28;01h56m47s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.38V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.221
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.790
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE08000003020651;;Read Product ID;06;06;06;Write Brand ID;;FE080200030402F7;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A05000303060505D9;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;True;Eco Mode;;FE080900005002AD;;Value Eco;205;218,921602;240;Confort Mode;;FE080A0000500102;;Value Confort;0;1,863576;15;Calibration;False;Reset Calibration Voltage;;FE0B0B00031000000000EB;;Reset Calibration Current;;FE0B0C00031100000000F0;;Voltage;210;218,070874;240;Current;3;5,258686;6;Read Power;0%;-10;100%;Voltage;210;218,055917;240;Calibration Voltage;;FE0B0E000310C853030008;;Current;3;5,260507;6;Calibration Current;;FE0B0F0003118D14000003;;Read Power;0%;-18;2%
+2024/03/28;02h00m20s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.36V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.223
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.801
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE08110003020601;;Read Product ID;06;06;06;Write Brand ID;;FE081300030402A7;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A160003030605056C;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02
+2024/03/28;02h02m25s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.227
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.801
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE08000003020651;;Read Product ID;06;06;06;Write Brand ID;;FE080200030402F7;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A05000303060505D9;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02
+2024/03/28;02h04m36s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Setting;True;Write Product ID;;FE0809000302062A;;Read Product ID;06;06;06;Write Brand ID;;FE080B000304028C;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A0E00030306050555;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02
+2024/03/28;02h06m04s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Setting;True;Write Product ID;;FE081200030206A7;;Read Product ID;06;06;06;Write Brand ID;;FE0814000304028E;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A17000303060505B3;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02
+2024/03/28;02h07m02s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Mode Test;True;Eco Mode;;FE081B000050025B;;Value Eco;205;216,845223;240;Confort Mode;;FE081C000050017B;;Value Confort;0;2,042660;15;Calibration;False;Reset Calibration Voltage;;FE0B1D00031000000000B6;;Reset Calibration Current;;FE0B1E00031100000000E1;;Voltage;210;218,358561;240;Current;3;5,253649;6;Read Power;0%;-11;100%;Voltage;210;218,314565;240;Calibration Voltage;;FE0B20000310CB540300B8;;Current;3;5,254779;6;Calibration Current;;FE0B210003118714000003;;Read Power;0%;-13;2%;Store Power;1147,195;1293,000;1170,139
+2024/03/28;02h09m44s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Mode Test;True;Eco Mode;;FE08230000500214;;Value Eco;205;219,118074;240;Confort Mode;;FE08240000500134;;Value Confort;0;1,926670;15;Calibration;True;Reset Calibration Voltage;;FE0B250003100000000077;;Reset Calibration Current;;FE0B260003110000000020;;Voltage;210;218,253105;240;Current;3;5,248058;6;Read Power;-100%;-10;100%;Voltage;210;218,254696;240;Calibration Voltage;;FE0B280003108F540300E3;;Current;3;5,246819;6;Calibration Current;;FE0B290003117F14000028;;Read Power;-4%;-0;4%;Store Power;1099,337;1146,000;1190,949
+2024/03/28;02h11m23s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Setting;True;Write Product ID;;FE082B000302068A;;Read Product ID;06;06;06;Write Brand ID;;FE082D00030402A3;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A3000030306050501;;Read HW Version;;060505;;Mode Test;True;Eco Mode;;FE08320000500244;;Value Eco;205;218,966235;240;Confort Mode;;FE0833000050012F;;Value Confort;0;1,963330;15;Calibration;False;Reset Calibration Voltage;;FE0B340003100000000053;;Reset Calibration Current;;FE0B350003110000000022;;Voltage;210;218,136391;240;Current;3;5,248375;6;Read Power;-100%;-11;100%;Voltage;210;218,174819;240;Calibration Voltage;;FE0B370003103F540300AD;;Current;3;5,249064;6;Calibration Current;;FE0B3800031181140000CB;;Read Power;-4%;-8;4%;Store Power;1099,405;1233,000;1191,022
+2024/03/28;02h12m02s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;
+2024/03/28;02h12m47s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Setting;True;Write Product ID;;FE083B00030206B8;;Read Product ID;06;06;06;Write Brand ID;;FE083D0003040291;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A4000030306050536;;Read HW Version;;060505;;Mode Test;True;Eco Mode;;FE084200005002DA;;Value Eco;205;219,095161;240;Confort Mode;;FE084300005001B1;;Value Confort;0;1,930292;15;Calibration;True;Reset Calibration Voltage;;FE0B4400031000000000D6;;Reset Calibration Current;;FE0B4500031100000000A7;;Voltage;210;218,105125;240;Current;3;5,242876;6;Read Power;-100%;-12;100%;Voltage;210;218,169767;240;Calibration Voltage;;FE0B480003103A54030087;;Current;3;5,244659;6;Calibration Current;;FE0B490003117D140000B6;;Read Power;-4%;-0;4%;Store Power;1098,457;1145,000;1189,995
+2024/03/28;02h13m33s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Setting;True;Write Product ID;;FE084B0003020626;;Read Product ID;06;06;06;Write Brand ID;;FE084D000304020F;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A510003030605053A;;Read HW Version;;060505;;Mode Test;True;Eco Mode;;FE0853000050028A;;Value Eco;205;219,038753;240;Confort Mode;;FE085400005001AA;;Value Confort;0;1,921296;15;Calibration;True;Reset Calibration Voltage;;FE0B5500031000000000F2;;Reset Calibration Current;;FE0B5600031100000000A5;;Voltage;210;218,109938;240;Current;3;5,252365;6;Read Power;-100%;-12;100%;Voltage;210;218,202505;240;Calibration Voltage;;FE0B590003105B540300E0;;Current;3;5,253485;6;Calibration Current;;FE0B5A0003118514000007;;Read Power;-4%;0;4%;Store Power;1100,471;1143,000;1192,177
+2024/03/28;02h14m16s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Setting;True;Write Product ID;;FE085C000302063D;;Read Product ID;06;06;06;Write Brand ID;;FE085E000304029B;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A6100030306050548;;Read HW Version;;060505;;Mode Test;True;Eco Mode;;FE086300005002DC;;Value Eco;205;219,196400;240;Confort Mode;;FE086400005001FC;;Value Confort;0;1,919942;15;Calibration;True;Reset Calibration Voltage;;FE0B6500031000000000AB;;Reset Calibration Current;;FE0B6600031100000000FC;;Voltage;210;218,180268;240;Current;3;5,250760;6;Read Power;-100%;-12;100%;Voltage;210;218,182536;240;Calibration Voltage;;FE0B680003104754030025;;Current;3;5,249941;6;Calibration Current;;FE0B690003118214000009;;Read Power;-4%;-2;4%;Store Power;1099,628;1172,000;1191,263
+2024/03/28;02h15m28s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Setting;True;Write Product ID;;FE086B0003020642;;Read Product ID;06;06;06;Write Brand ID;;FE086D000304026B;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A7000030306050544;;Read HW Version;;060505;;BP Test;False;Result Press;01;01;01;Result Press;02;01;02;Mode Test;True;Eco Mode;;FE087500005002A5;;Value Eco;205;218,818374;240;Confort Mode;;FE0876000050010A;;Value Confort;0;1,931486;15;Calibration;True;Reset Calibration Voltage;;FE0B7700031000000000BA;;Reset Calibration Current;;FE0B780003110000000039;;Voltage;210;218,037340;240;Current;3;5,247140;6;Read Power;-100%;-12;100%;Voltage;210;218,064430;240;Calibration Voltage;;FE0B7A000310D053030016;;Current;3;5,247358;6;Calibration Current;;FE0B7B0003117F140000E5;;Read Power;-4%;1;4%;Store Power;1098,492;1138,000;1190,033
+2024/03/28;02h15m56s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Setting;True;Write Product ID;;FE087D000302063B;;Read Product ID;06;06;06;Write Brand ID;;FE087F000304029D;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A8200030306050540;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02
+2024/03/28;02h16m52s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Setting;True;Write Product ID;;FE0886000302068D;;Read Product ID;06;06;06;Write Brand ID;;FE088800030402BD;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A8B00030306050575;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;True;Eco Mode;;FE088F0000500271;;Value Eco;205;219,026024;240;Confort Mode;;FE0890000050017A;;Value Confort;0;1,938213;15;Calibration;False;Reset Calibration Voltage;;FE0B9100031000000000DD;;Reset Calibration Current;;FE0B92000311000000008A;;Voltage;210;218,083405;240;Current;3;5,252877;6;Read Power;-100%;-12;100%;Voltage;210;218,121554;240;Calibration Voltage;;FE0B940003100A540300AE;;Current;3;5,252257;6;Calibration Current;;FE0B950003118414000093;;Read Power;-4%;-27;4%;Store Power;1099,805;1455,000;1191,456
+2024/03/28;02h17m45s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Setting;True;Write Product ID;;FE089700030206DD;;Read Product ID;06;06;06;Write Brand ID;;FE089900030402ED;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0A9C000303060505B5;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;True;Eco Mode;;FE08A00000500225;;Value Eco;205;219,008680;240;Confort Mode;;FE08A1000050014E;;Value Confort;0;1,919982;15;Calibration;True;Reset Calibration Voltage;;FE0BA200031000000000B1;;Reset Calibration Current;;FE0BA300031100000000C0;;Voltage;210;218,189458;240;Current;3;5,243705;6;Read Power;-100%;-12;100%;Voltage;210;218,135874;240;Calibration Voltage;;FE0BA500031018540300AF;;Current;3;5,244783;6;Calibration Current;;FE0BA60003117D1400005A;;Read Power;-4%;1;4%;Store Power;1098,312;1138,000;1189,838
+2024/03/28;02h20m32s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.38V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.226
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.805
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE08A800030206BB;;Read Product ID;06;06;06;Write Brand ID;;FE08AA000304021D;;Read Brand ID;02;02;02;FW Version;010404;010404;010404;Write HW Version;;FE0AAD00030306050518;;Read HW Version;;060505;;BP Test;True;Result Press;01;01;01;Result Press;02;02;02;Mode Test;True;Eco Mode;;FE08B10000500275;;Value Eco;205;218,905531;240;Confort Mode;;FE08B200005001DA;;Value Confort;0;1,936740;15;Calibration;True;Reset Calibration Voltage;;FE0BB30003100000000095;;Reset Calibration Current;;FE0BB4000311000000008E;;Voltage;210;218,147768;240;Current;3;5,251414;6;Read Power;-100%;-12;100%;Voltage;210;218,063436;240;Calibration Voltage;;FE0BB6000310CF53030014;;Current;3;5,254606;6;Calibration Current;;FE0BB700031187140000E1;;Read Power;-4%;1;4%;Store Power;1100,004;1136,000;1191,671
+2024/03/28;02h40m21s ;AAAAAAA;;;;;;;;;Init;True;Close Fixture;;1;;Programing;True;Flash FW;;      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 34FF710630514B3860402543
+ST-LINK FW  : V2J37S7
+Board       : --
+Voltage     : 3.37V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x417
+Revision ID : Rev X
+Device name : STM32L05x/L06x/L010
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0+
+BL Version  : 0xC0
+
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 0%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0xBB (or any value other than 0xAA and 0xCC: Level 1, read protection) 
+
+   PCROP Protection:
+
+     WPRMOD       : 0x0 (WRPx bit defines sector write protection) 
+
+   BOR Level:
+
+     BOR_LEV      : 0x0 (BOR Level OFF, reset level threshold the 1.45 V-1.55 V) 
+
+   User Configuration:
+
+     IWDG_SW      : 0x1 (Software independent watchdog) 
+     nRST_STOP    : 0x1 (No reset generated) 
+     nRST_STDBY   : 0x1 (No reset generated) 
+     nBOOT1       : 0x1 (Boot from Flash if BOOT0 = 0, otherwise system memory) 
+
+   Write Protection:
+
+     WRPOT1       : 0x0 (Write protection not active) 
+     WRPOT2       : 0x0 (Write protection not active) 
+     WRPOT3       : 0x0 (Write protection not active) 
+     WRPOT4       : 0x0 (Write protection not active) 
+     WRPOT5       : 0x0 (Write protection not active) 
+     WRPOT6       : 0x0 (Write protection not active) 
+     WRPOT7       : 0x0 (Write protection not active) 
+     WRPOT8       : 0x0 (Write protection not active) 
+     WRPOT9       : 0x0 (Write protection not active) 
+     WRPOT10      : 0x0 (Write protection not active) 
+     WRPOT11      : 0x0 (Write protection not active) 
+     WRPOT12      : 0x0 (Write protection not active) 
+     WRPOT13      : 0x0 (Write protection not active) 
+     WRPOT14      : 0x0 (Write protection not active) 
+     WRPOT15      : 0x0 (Write protection not active) 
+     WRPOT16      : 0x0 (Write protection not active) 
+
+PROGRAMMING OPTION BYTES AREA ...
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+Reconnecting...
+Reconnected !
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+UPLOADING OPTION BYTES DATA ...
+
+  Bank          : 0x00
+  Address       : 0x4002201c
+  Size          : 104 Bytes
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ 100%
+
+  Bank          : 0x01
+  Address       : 0x1ff80000
+  Size          : 20 Bytes
+
+
+
+OPTION BYTE PROGRAMMING VERIFICATION:
+
+Option Bytes successfully programmed
+
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±± 50%
+€€€€  8%Time elapsed during option Bytes configuration: 00:00:01.233
+
+Mass erase ... 
+
+Mass erase successfully achieved
+
+
+Memory Programming ...
+Opening and parsing file: FW_FP.hex
+  File          : FW_FP.hex
+  Size          : 53.45 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 426]
+Erasing memory corresponding to segment 1:
+Erasing internal memory sector 1
+Download in Progress:
+€€€€ 16%€€€€ 25%€€€€ 33%€€€€€ 42%€€€€ 50%€€€€ 58%€€€€ 67%€€€€ 75%€€€€€ 84%€€€€ 92%€€€€ 100%
+
+File download complete
+Time elapsed during download operation: 00:00:06.801
+
+MCU Reset
+
+Software reset is performed
+;;Setting;True;Write Product ID;;FE08B900030206EB;;Read Product ID;06;06;06;Write Brand ID;;FE08BB000304024D;

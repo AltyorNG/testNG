@@ -1,0 +1,33 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel
+*-------------------------------------Scan-------------------------------------------
+Main Test;Scan ID;;;;;;;;
+Test;SN Code;Enter_ID_Enocean.lvclass;;;{"Lenght Code":88,"Tag code":"30S"};;;Yes;No
+*------------------------------------Ask Close------------------------------------------
+Main Test;Ask Close;;;;;;;;
+Function;PlaceMagnet;Operator_Information.lvclass;;;{"Blinking":false,"Information_Operator":"\n\nPlace\nl'aimant","Path_Picture":"<PathParameter>\IHM Picture\Close_Product.bmp"};;;No;Yes
+*------------------------------------State Close------------------------------------------
+Main Test;Close;;;;;;;;
+Test;ID;Wait_Frame_ERP1.lvclass;;;{"Frame Type":"Normal Mode","R-org":"D5","TimeOut":30000};;;No;No
+Test;Close;Check_State.lvclass;;;;1;1;No;No
+Function;HideClose;Hide_Operator_Information.lvclass;;;;;;No;No
+*--------------------------------------------------------------------------------------------------------
+*------------------------------------Ask Open------------------------------------------
+Main Test;Ask Open;;;;;;;;
+Function;RemoveMagnet;Operator_Information.lvclass;;;{"Blinking":false,"Information_Operator":"\nRetirer\nl'aimant","Path_Picture":"<PathParameter>\IHM Picture\Open_Product.bmp"};;;No;Yes
+*------------------------------------State Open------------------------------------------
+Main Test;Open;;;;;;;;
+Test;ID;Wait_Frame_ERP1.lvclass;;;{"Frame Type":"Normal Mode","R-org":"D5","TimeOut":30000};;;No;No
+Test;Open;Check_State.lvclass;;;;0;0;No;No
+Function;HideOpen;Hide_Operator_Information.lvclass;;;;;;No;No
+*--------------------------------------------------------------------------------------------------------
+*------------------------------------Ask Teach-IN------------------------------------------
+Main Test;Show information;;;;;;;;
+Function;Button;Operator_Information.lvclass;;;{"Blinking":false,"Information_Operator":"\nAppui\net\nrelache\nle Bouton","Path_Picture":"<PathParameter>\IHM Picture\Close_Fixture.bmp"};;;No;Yes
+*------------------------------------Teach-IN------------------------------------------
+Main Test;Teach-IN;;;;;;;;
+Test;ID;Wait_Frame_ERP1.lvclass;;;{"Frame Type":"Teach IN","R-org":"D5","TimeOut":30000};;;No;No
+Test;RSSI;RSSI_Enocean.lvclass;;;;0;100;No;No
+Function;Hide Button;Hide_Operator_Information.lvclass;;;;;;No;No
+*------------------------------------Print------------------------------------------
+*Main Test;Print Label;;;;;;;;
+*Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_CAB.lvclass;"<PathLabel>\\LabelPCBA.lbl";;;Yes;No

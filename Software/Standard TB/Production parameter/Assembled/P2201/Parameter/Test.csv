@@ -1,0 +1,10 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel
+***********************SN Product*******************************
+Main Test;SCAN SN Product;;;;;;;;;;;
+Test;SN Product;P2201_Scan_SN.lvclass;;;{"PRCE"="^{"};;;No;No
+***********************SN Screnn*******************************
+Main Test;SCAN SN Screen;;;;;;;;;;;
+Test;SN Screen;P2201_Scan_Screen.lvclass;;;{"PRCE"="^G"};;;No;No
+***********************Print*******************************
+Main Test;Print Label;;;;;;;;
+Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_TSC.lvclass;"<PathLabel>\\FillnDrive.lbl";;;Yes;No

@@ -1,0 +1,5 @@
+Name Instrument;Class Instr;Parameter Init (Json)
+Database;Firebase AssembledProducts.lvclass;{"API_Key":"AIzaSyBTwCMO9PaXsM5I0oUz5bf7NZlT3IzL36I","Name_BDD":"p2124-nodon-stp-test"}
+*Relay;Class Relay_Board 16_Relay_R4D3B16.lvclass;{"Address Board":"1","Device_Com_Port":"COM10"}
+Printer;Class Printer_CAB.lvclass;"COM17";
+Dongle Enocean;Class UART Enocean.lvclass;{"Address Device":"COM7","Baud Rate":57600,"Data Bit":8,"Enable Termination":false,"flow control (0:none)":0,"parity (0:none)":"None","stop bits (10: 1 bit)":10,"termination char ":10}

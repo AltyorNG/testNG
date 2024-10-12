@@ -1,0 +1,7 @@
+Name Instrument;Class Instr;Parameter Init (Json)
+Database;Database Altyor.lvclass;{"Connection Name ODBC":"BDDTestBench","DatabaseName":"bdd"}
+*LED;Class LED Analyser FEASA_10_F.lvclass;"COM4"
+*Spectrum;Class Spectrum_Analyser RS306B.lvclass;TCPIP0::192.168.1.49::inst0::INSTR
+*Power_Supply;Class Power_Supply Rigol DP800.lvclass;USB0::0x1AB1::0x0E11::DP8C244306230::INSTR
+DIO;Class DIO NI.lvclass;;;
+*Printer;Class Printer_TSC.lvclass;"TSC TTP-342 Pro";

@@ -1,0 +1,14 @@
+e IMG;*
+; LABEL ->  = Q:\P2193\Applicatif\Sticker\Label PCBA.stc
+; CREATED: 18/09/2023 10:38:06, Driver version: 1.0.7.1, Target model: A2+/600
+m m
+zO
+J
+j 3173040272193147
+S l1;0,0,10,15,13
+H 100,0,T,R0,B0
+O R,P
+P
+B:Barcode1;4.12,1.71,0,qrcode+ELH+MODEL2,0.25;$QR_Code$
+T:Text2;3.06,9.06,0,3,1.69,k;Ok
+A 1

@@ -1,0 +1,4 @@
+Name Instrument;Class Instr;Parameter Init (Json)
+Database;Firebase AssembledProducts.lvclass;{"API_Key":"AIzaSyA7s6voPmPz23AFq9Gf0MuiZb0WEky9844","Name_BDD":"p2265-schneider-knx-test"}
+*Relay;Class Relay_Board 16_Relay_R4D3B16.lvclass;{"Address Board":"1","Device_Com_Port":"COM10"}
+Printer;Class Printer_CAB.lvclass;"COM1";

@@ -1,0 +1,11 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel;Mandatory
+***********************Test Weigth*******************************
+Main Test;Weight Test;;;;;;;;
+Function;ShowInformationO;Put_Weight.lvclass;Balance;;{"Information_Operator":"\n\nPlacer\nle\nproduit","Ok_Button_Visible":false,"Path_Picture":"<PathParameter>\IHM Picture\Open_Fixture.bmp","Weight":1,"Timeout (ms)":300000000};;;No;No
+Function;Delay;Delay.lvclass;;;2000;;;Yes;No
+Test;Get Weight;Read_Weight.lvclass;Balance;;;4.295;4.4;No;No
+Function;ShowInformationO;Remove_Weight.lvclass;Balance;;{"Information_Operator":"\n\nRetire\nle\nproduit","Ok_Button_Visible":false,"Path_Picture":"<PathParameter>\IHM Picture\Open_Fixture.bmp","Weight":1,"Timeout (ms)":300000000};;;No;No
+**************************Print********************************
+Main Test;Print Label;;;;;;;;
+Function;Generate SN;Generate_SN.lvclass;;;{"Class SN":"Creation_SN_P2222.lvclass"};;;No;Yes
+*Function;Print_Label;Print_Label.lvclass;Printer;;"<PathLabel>\\Label.lbl";;;Yes;No

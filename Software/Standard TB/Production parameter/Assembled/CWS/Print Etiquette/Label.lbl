@@ -1,0 +1,34 @@
+; LABEL -> Petite Etiquette OK = C:\Users\ngarcin\OneDrive - Altyor\Standard TB\Software\Sticker\P1817 - Etiquette Mastercarton.stc
+; CREATED: 25/04/2024 09:25:15, Driver version: 1.0.7.1, Target model: A4+/600
+l FR
+m m
+zO
+J Petite Etiquette OK
+j 3173985160626739
+S l1;0,0,100,103,70;Petite Etiquette OK
+H 30,0,T,R0,B0
+O R,P
+G72.32,84.45,180;L:72.35,0.2,s,s
+G72.11,66.49,180;L:72.05,0.2,s,s
+T:Text5;29.17,91.84,0,5,6.73,b,k,q98;pcs
+T:Text6;2.35,5.55,0,5,3.5,b,k;CLIENT:
+T:Text7;16.51,5.55,0,3,3.5,k;Money Walkie
+T:Text1;16.54,92.46,0,5,6.72,b,k,q98;50
+T:Text4;2.35,19.43,0,5,3.5,b,k;PRODUIT :
+T:Text8;21.08,19.55,0,3,3.5,k;CWS
+T:Text9;2.35,12.85,0,5,3.5,b,k;No PROJET :
+T:Text10;24.14,12.84,0,3,3.5,k;P2222
+T:Text12;28.44,26.67,0,3,3.5,k;04-030302
+T:Text13;2.35,33.22,0,5,3.5,b,k;REF CLIENT :
+T:Text16;2.35,39.22,0,5,3.5,b,k;DATE PRODUCTION :
+T:Text17;39.85,39.22,0,3,3.5,k;$Date$
+T:Text18;26.88,70.18,0,5,3.5,b,k;REF. CARTON :
+T:Text19;1.6,78.64,0,3,3,k;$Num_Serie$
+B:Barcode1;33.36,71.96,0,CODE128,11.91,0.21;$Num_Serie$
+G69.58,51.35,270;R:14.46,20.61,0.2,0.2
+T:Text20;52.62,55.02,0,5,3.5,b,k;VISA OP
+T:Text2;2.35,26.51,0,5,3.5,b,k;REF ALTYOR :
+T:Text11;2.13,44.51,0,5,3.5,b,k;No OA :
+T:Text21;16.2,44.61,0,3,3.5,k;$NO_OA$
+T:Text22;1.81,50.2,0,5,3.5,b,k;Gross Weight : 4,5Kg
+A 1

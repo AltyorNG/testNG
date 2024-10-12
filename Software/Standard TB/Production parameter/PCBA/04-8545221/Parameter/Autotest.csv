@@ -1,0 +1,4 @@
+Name Instrument;Class Instr;Parameter Init (Json)
+Database;Firebase Benches.lvclass;{"API_Key":"AIzaSyA7s6voPmPz23AFq9Gf0MuiZb0WEky9844","Name_BDD":"p2265-schneider-knx-test"}
+DIO;Class DIO NI.lvclass;;;
+*Printer;Class Printer_CAB.lvclass;"COM1";

@@ -1,0 +1,14 @@
+GAP 3 mm
+SIZE 8 mm,8 mm
+SPEED 2
+DIRECTION 1
+CLS
+DENSITY 5
+QRCODE 7,0,L,3,A,0,M2,"$Num_Serie$"
+PRINT 1
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel
+***********************Init*******************************
+Main Test;Init;;;;;;;;
+Function;Generate SN;Generate_SN.lvclass;Database;;{"Class SN":"Creation_SN_Nodon.lvclass","Product Number":"STP","Protocol":"2"};;;Yes;No

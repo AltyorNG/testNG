@@ -1,0 +1,59 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel
+*-------------------------------Scan SN-------------------------------------------
+*Main Test;Scan SN;;;;;;;;
+*Test;SN Antenna;Nodon_Scan_SN.lvclass;;;{"PRCE":"\d{4}2\d{8}"};;;No;No
+*Function;Addr_Mac;Get_Addr_Mac_DB_AIS.lvclass;Database;;;;;No;No
+*Function;Key;Get_Key_DB_AIS.lvclass;Database;;;;;No;No
+*-------------------------------Int Zigbee Network-------------------------------------------
+
+Main Test;Init;;;;;;;;
+Function;Reser;Zigbee_Reset.lvclass;;;;;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Function;NetLeave;Zigbee_Net_Leave.lvclass;;;;;;No;No
+Function;Delay;Delay.lvclass;;;2000;;;No;No
+Function;Extpanid;Zigbee_Extpanid.lvclass;;;{"ID Network":105E0104FFFFFFFF};;;No;No
+*-------------------------------Connection Zigbee Network-------------------------------------------
+Main Test;Connection;;;;;;;;
+Test;WList;Zigbee_White_List.lvclass;;;;;;No;No
+Function;NetCreator;Zigbee_Network_Creator.lvclass;;;;;No;No
+Function;OpenNet;Zigbee_Start_Permit_Join.lvclass;;;;;Yes;No
+*Function;Delay;Delay.lvclass;;;1000;;;No;No
+
+*-----------------------------------Get Manufacturer Name-------------------------------------------
+Main Test;Manufacturer Name;;;;;;;;
+Function;ReadManufacturerName;Zigbee_Read_Msg.lvclass;;;{"Cluster":"0x0000", "attributeId":"0x0004"};;;No;No
+Test;ManufacturerName;Zigbee_Send_Msg_Manufacturer_Name.lvclass;;;;NodOn;NodOn;No;No
+*-----------------------------------Get Model Identifier-------------------------------------------
+Main Test;Model Identifier;;;;;;;;
+Function;ReadManufacturerName;Zigbee_Read_Msg.lvclass;;;{"Cluster":"0x0000", "attributeId":"0x0005"};;;No;No
+Test;ManufacturerName;Zigbee_Send_Msg_Model_Identifier.lvclass;;;;SIN-4-1-21;SIN-4-1-21;No;No
+*-----------------------------------Get FW version-------------------------------------------
+Main Test;FW Version;;;;;;;;
+Function;ReadManufacturerName;Zigbee_Read_Msg.lvclass;;;{"Cluster":"0x0000", "attributeId":"0x4000"};;;No;No
+Test;ManufacturerName;Zigbee_Send_Msg_SwBuildID.lvclass;;;;3.0.0-1.4.4;3.0.0-1.4.4;No;No
+Function;ResetVariable;Reset_Variable_SIN.lvclass;;;;;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+*-----------------------------------Test SIN-1-CH-------------------------------------------
+Main Test;CheckMode;;;;;;;;
+Function;Delay;Delay.lvclass;;;10000;;;No;No
+Function;CloseNet;Zigbee_Stop_Permit_Join.lvclass;;;;;No;No
+*Function;IdManufacturer;Zigbee_Set_Manufacturer_id.lvclass;;;{"ID Manufacturer":"0x128B"};;;No;No
+Function;ReadMode;Zigbee_Read_Msg.lvclass;;;{"Cluster":"0x0006", "attributeId":"0x0000"};;;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Function;Mode;Zigbee_Send_Msg_CH1.lvclass;;;;;;No;No
+Function;Button;Operator_Control.lvclass;;;{"Information_Operator":"\nPress\non\nthe button\n","Path_Picture":"<PathParameter>\IHM Picture\LED.bmp"};;;No;No
+*Function;IdManufacturer;Zigbee_Set_Manufacturer_id.lvclass;;;{"ID Manufacturer":"0x128B"};;;No;No
+Function;ReadMode;Zigbee_Read_Msg.lvclass;;;{"Cluster":"0x0006", "attributeId":"0x0000"};;;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Test;Mode;Zigbee_Send_Msg_CH1.lvclass;;;;;;No;No
+*-----------------------------------Remove Network-------------------------------------------
+Main Test;Remove Network;;;;;;;;
+Function;ResetCluster;Zigbee_Cluster_Reset.lvclass;;;;;;No;No
+Function;Send;Zigbee_Send_Msg_CH1.lvclass;;;;;;No;No
+Function;Remove;Zigbee_Remove_From_Network.lvclass;;;;;;No;No
+Function;NetLeave;Zigbee_Net_Leave.lvclass;;;;;;No;No
+
+
+*------------------------------------Print------------------------------------------
+*Main Test;Print Label;;;;;;;;
+*Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_CAB.lvclass;"<PathLabel>\\LabelAssy.lbl";;;Yes;No

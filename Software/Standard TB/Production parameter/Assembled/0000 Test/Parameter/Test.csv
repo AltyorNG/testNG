@@ -1,0 +1,61 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel
+*-------------------------------Scan SN-------------------------------------------
+*Main Test;Scan SN;;;;;;;;
+*Test;SN Antenna;Nodon_Scan_SN.lvclass;;;{"PRCE":"^2313ANT"};;;No;No
+*Function;Addr_Mac;Get_Addr_Mac_DB_AIS.lvclass;;;{"Connection":"AntennaA","Database":["p2313_prod_A_antenna","p2313_prod_B_antenna"],"Table":"main_table"};;;No;N
+*Function;Key;Get_Key_DB_AIS.lvclass;;;{"Connection":"AntennaA","Database":["p2313_prod_A_antenna","p2313_prod_B_antenna"],"Table":"main_table"};;;No;No
+*Test;SN PWR;Nodon_Scan_SN.lvclass;;;{"PRCE":"^2313PWR"};;;No;No
+*-------------------------------Int Zigbee Network-------------------------------------------
+
+Main Test;Init;;;;;;;;
+Function;Reser;Zigbee_Reset.lvclass;;;;;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Function;NetLeave;Zigbee_Net_Leave.lvclass;;;;;;No;No
+Function;Delay;Delay.lvclass;;;2000;;;No;No
+Function;Extpanid;Zigbee_Extpanid.lvclass;;;{"ID Network":105E0104FFFFFFFF};;;No;No
+*-------------------------------Connection Zigbee Network-------------------------------------------
+Main Test;Connection;;;;;;;;
+Test;WList;Zigbee_White_List.lvclass;;;;;;No;No
+Function;NetCreator;Zigbee_Network_Creator.lvclass;;;;;No;No
+Function;OpenNet;Zigbee_Start_Permit_Join.lvclass;;;;;Yes;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Function;CloseNet;Zigbee_Stop_Permit_Join.lvclass;;;;;No;No
+*-----------------------------------Get Manufacturer Name-------------------------------------------
+Main Test;Manufacturer Name;;;;;;;;
+Function;ReadManufacturerName;Zigbee_Read_Msg.lvclass;;;{"Cluster":"0x0000", "attributeId":"0x0004"};;;No;No
+Test;ManufacturerName;Zigbee_Send_Msg_Manufacturer_Name.lvclass;;;;NodOn;NodOn;No;No
+*-----------------------------------Get Model Identifier-------------------------------------------
+Main Test;Model Identifier;;;;;;;;
+Function;ReadManufacturerName;Zigbee_Read_Msg.lvclass;;;{"Cluster":"0x0000", "attributeId":"0x0005"};;;No;No
+Test;ManufacturerName;Zigbee_Send_Msg_Model_Identifier.lvclass;;;;VAV-256215-MOD1;VAV-256215-MOD1;No;No
+*-----------------------------------Get FW version-------------------------------------------
+Main Test;FW Version;;;;;;;;
+Function;ReadManufacturerName;Zigbee_Read_Msg.lvclass;;;{"Cluster":"0x0000", "attributeId":"0x4000"};;;No;No
+Test;ManufacturerName;Zigbee_Send_Msg_SwBuildID.lvclass;;;;3.3.0-1.4.5;3.3.0-1.4.5;No;No
+Function;ResetVariable;Reset_Variable_SIN.lvclass;;;;;;No;No
+*-----------------------------------Test FP-------------------------------------------
+Main Test;CheckMode;;;;;;;;
+Function;IdManufacturer;Zigbee_Set_Manufacturer_id.lvclass;;;{"ID Manufacturer":"0x153A"};;;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Function;ReadMode;Zigbee_Read_Msg.lvclass;;;{"Cluster":"0xFC00", "attributeId":"0x0000"};;;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Function;Mode;Zigbee_Send_Msg_ModeFP.lvclass;;;;;;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Function;Button;Operator_Control.lvclass;;;{"Information_Operator":"\nPress\non\nthe button\n","Path_Picture":"<PathParameter>\IHM Picture\LED.bmp"};;;No;No
+Function;IdManufacturer;Zigbee_Set_Manufacturer_id.lvclass;;;{"ID Manufacturer":"0x153A"};;;No;No
+*Function;Delay;Delay.lvclass;;;500;;;No;No
+Function;ReadMode;Zigbee_Read_Msg.lvclass;;;{"Cluster":"0xFC00", "attributeId":"0x0000"};;;No;No
+*Function;Delay;Delay.lvclass;;;500;;;No;No
+Test;Mode;Zigbee_Send_Msg_ModeFP.lvclass;;;;;;No;No
+*-----------------------------------Remove Network-------------------------------------------
+Main Test;Remove Network;;;;;;;;
+Function;ResetCluster;Zigbee_Cluster_Reset.lvclass;;;;;;No;No
+Function;Send;Zigbee_Send_Msg_Default.lvclass;;;;;;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Function;Remove;Zigbee_Remove_From_Network.lvclass;;;;;;No;No
+Function;NetLeave;Zigbee_Net_Leave.lvclass;;;;;;No;No
+*------------------------------------Print------------------------------------------
+Main Test;Print Label;;;;;;;;
+Function;Init Power;Generate_ID_Product_Nodon.lvclass;;;{"TagID_Product":"SIN"};;;No;No
+Function;Init Power;Nodon_Generate_SN_Product.lvclass;;;{"Connection":"AntennaA","Database":["p2313_prod_A_antenna","p2313_prod_B_antenna"],"Table":"main_table"};;;No;No
+Function;Print_Label;Print_Label.lvclass;Printer;;"<PathLabel>\\LabelAssy.lbl";;;Yes;No

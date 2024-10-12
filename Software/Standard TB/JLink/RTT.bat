@@ -1,0 +1,1 @@
+JLink.exe -SelectEmuBySN 50110318

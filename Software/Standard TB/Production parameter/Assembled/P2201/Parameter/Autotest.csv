@@ -1,0 +1,7 @@
+Name Instrument;Class Instr;Parameter Init (Json)
+Database;Firebase AssembledProducts.lvclass;{"API_Key":"AIzaSyCdSqoxJdncCNax5D2X7mjIJ84zBvCt7tw","Name_BDD":"p2201-filldrive-fd-prod"}
+*Database;Database Altyor.lvclass;{"Connection Name ODBC":"p2313_prod","DatabaseName":"p2313_prod_power"}
+*Multi_Voltage;Class Multimeter Rigol DM3058.lvclass;USB0::0x1AB1::0x09C4::DM3R183601983::INSTR
+*Database;Database Altyor.lvclass;{"Connection Name ODBC":"BDDTestBench","DatabaseName":"bdd"}
+*LogFile;Class Log_File Altyor.lvclass;{"Path Historic":"<PathLog>\\Log.csv"}
+Printer;Class Printer_TSC.lvclass;"TSC TX310";

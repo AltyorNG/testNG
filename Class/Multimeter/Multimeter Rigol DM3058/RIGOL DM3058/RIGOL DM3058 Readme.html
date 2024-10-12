@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>RIGOL DM3058 Instrument Instrument Driver Readme</title>
+</head>
+<body>
+<h2>RIGOL DM3058 Instrument Driver Readme</h2>
+<para>To rate this instrument driver, go to the driver download page on the <a href="http://www.ni.com/idnet">Instrument Driver Network</a>.</para>
+<h4>1. Overview</h4>
+<para>
+Instrument Driver Technology: LabVIEW Plug and Play (project-style)
+<br>
+Manufacturer: RIGOL Technologies, Inc
+<br>
+Supported Language(s): LabVIEW 8.2
+<br>
+Supported Model(s): RIGOL DM3051, DM3058, DM3068, DM3058E
+<br>
+Model(s) Tested: RIGOL DM3051, DM3058, DM3068
+<br>
+Interface(s): GPIB, USB, Ethernet, LXI
+<br>
+Firmware Revision(s) Tested: 03.12.00.03.11.00 (DM3051), 01.01.00.01.08.00 (DM3058), 01.01.00.01.05.00 (DM3068)
+<br>
+<br>
+Certified: Yes
+<br>
+NI Supported: Yes
+<br>
+Source Code Available: Yes
+<br>
+<br>
+Driver Revision: 1.2.1
+<br>
+Original Release Date: 08/04/2009
+<br>
+Current Revision Date: 10/2015
+</para>
+
+<h4>2. Required Software</h4>
+<para>Some software components need to be installed before using this instrument driver. Minimum versions of these components are listed below, and can be downloaded from the Download Site.
+<br>
+<br>
+VISA 5.0 or later
+<br>
+<br>
+Refer to the <i>LabVIEW Help</i> for more information about software requirements. You access the <i>LabVIEW Help</i> by selecting <i>Help&raquo;Search the LabVIEW Help</i>.</para>
+
+<h4>3. Known Issues</h4>
+
+To report issues or provide feedback about this instrument driver,  <a href="http://www.ni.com/en-us/support.html">please contact technical support</a>.</para></font>
+
+</font><br>
+<para></para>
+
+<h4>4. Revision History</h4>
+<para>The latest version of this and other LabVIEW and LabWindows/CVI instrument drivers can be downloaded at the <a href="http://www.ni.com/idnet">Instrument Driver Network</a>.<br>
+<br>
+REV 1.0, 08/04/2009
+<br>
+Modified by: RIGOL Technologies, Inc.
+<br>
+Original release.
+<br>
+<br>
+REV 1.1, 09/15/2011
+<br>
+Modified by: National Instruments
+<br>
+Add DM3051 and DM3068 support.<br>
+<br>
+New VIs:<br>
+Public<br>
+<li>Configure AC Voltage Filter.vi
+<li>Configure Data Acquisition.vi
+<li>Enable Data Acquisition.vi
+<li>Error Query.vi
+<li>Read AC Frequency.vi
+<li>Read Data Acquisition.vi
+<li>Wait for Data Acquisition Complete.vi
+</li>
+Private<br>
+<li>Extended User Data.vi
+<li>Extended User Data.ctl
+</li>
+<br>
+Updated VIs:<br>
+</li>
+Examples<br>
+<li>RIGOL DM3058 Read Multiple.vi
+<li>RIGOL DM3058 Read Single.vi
+</li>
+Public<br>
+<li>Initialize.vi
+<li>VI Tree.vi
+<li>Configure Auto Trigger.vi
+<li>Configure Continuity Resistance.vi
+<li>Configure DC Current Filter.vi
+<li>Configure DC Input Resistance.vi
+<li>Configure DC Voltage Filter.vi
+<li>Configure Math.vi
+<li>Configure Measurement.vi
+<li>Configure Single Trigger.vi
+<li>Read Single Point.vi
+<li>Read Math.vi
+</li>
+<br>
+REV 1.1.1, 05/23/2012
+<br>
+Modified by: Haoran Feng, National Instruments 
+<br>
+Add time delay for Initialize.vi
+<br>
+<br>
+REV 1.2, 08/15/2012
+<br>
+Modified by: Xudong Yong, National Instruments
+<br>
+Updated VIs:<br>
+</li>
+Public<br>
+<li>Initialize.vi - Add DM3058E support
+<li>Configure Math.vi - use period decimal separator instead of comma decimal separator
+<li>Configure Auto Trigger.vi - use period decimal separator instead of comma decimal separator
+<li>Configure External Trigger.vi - new firmware no longer supports two original commands ":trigger:ext HIGH;" and ":trigger:ext LOW" based on deletion of menus in physical instruments
+<li>Read Math.vi - new "OFF" status included for Pass/Fail indicator 
+<li>Read AC Frequency.vi - new firmware replaces  two original commands ":measure:voltage:ac:frequency?" and ":measure:current:ac:frequency?" with one command ":measure:frequency?"based on deletion of menus in physical instruments
+and removed the userdata subVI.
+</li>
+<br>
+REV 1.2.1, 10/2015
+<br>
+Modified by National Instruments
+<br>
+User Data Definitions control and constants updated to include the model DM3058E
+<br>Private<br>
+<li>Extended User Data.vi
+<li>Extended User Data.ctl
+<br>Public\Configure<br>
+<li>Configure Measurement
+</li>
+</font></para></font>
+</body>
+</html>

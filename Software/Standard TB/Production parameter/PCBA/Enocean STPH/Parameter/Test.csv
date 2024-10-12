@@ -1,0 +1,31 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel
+*-------------------------------------Scan-------------------------------------------
+Main Test;Scan ID;;;;;;;;
+Test;SN Code;Enter_ID_Enocean.lvclass;;;{"Lenght Code":88,"Tag code":"30S"};;;Yes;No
+*------------------------------------Flash------------------------------------------
+Main Test;Flash Config;;;;;;;;
+Function;ShowInformationC;Wait_CloseFixture.lvclass;DIO;Class DIO NI.lvclass;{"Function":"Read","Information_Operator":"\n Placer la carte PCBA sur le support,\n puis fermer le fixture","Line":0,"Ok_Button_Visible":false,"Path_Picture":"<PathParameter>\IHM Picture\Close_Fixture.bmp","Port":0,"Timeout (ms)":300000000};;;No;No
+Test;Flash Cfg;Flash_Epox.lvclass;;;{"Path FW":"<PathFW>\\FW","Working Directory":"C:\Program Files\EnOcean\DolphinStudio","Path Config":"<PathFW>\\CFG"};;;Yes;No
+*------------------------------------Button------------------------------------------
+Main Test;Press Button;;;;;;;;
+Function;CloseRelay;Enable_DIO.lvclass;DIO;Class DIO NI.lvclass;{"Line":0,"Port":1};;;No;Yes
+Function;Wait;Delay.lvclass;;;2000;;;No;No
+Function;OpenRelay;Disable_DIO.lvclass;DIO;Class DIO NI.lvclass;{"Line":0,"Port":1};;;No;No
+*------------------------------------Read Temp------------------------------------------
+Main Test;Read Temp;;;;;;;;
+Test;ID;Wait_Frame_ERP1.lvclass;;;{"Frame Type":"Normal Mode","R-org":"A5","TimeOut":30000};;;No;No
+Test;Func;Check_Temp.lvclass;;;;11;25;No;No
+Function;ShowInformationO;Wait_OpenFixture.lvclass;DIO;Class DIO NI.lvclass;{"Function":"Read","Information_Operator":"\n\nOuvrir\nle\nfixture","Line":0,"Ok_Button_Visible":false,"Path_Picture":"<PathParameter>\IHM Picture\Open_Fixture.bmp","Port":0,"Timeout (ms)":300000000};;;No;No
+*------------------------------------Ask Teach-IN------------------------------------------
+Main Test;Show information;;;;;;;;
+Function;Button;Operator_Information.lvclass;;;{"Blinking":false,"Information_Operator":"\nAppui\net\nrelache\nle Bouton","Path_Picture":"<PathParameter>\IHM Picture\Close_Fixture.bmp"};;;No;Yes
+*------------------------------------Teach-IN------------------------------------------
+Main Test;Teach-IN;;;;;;;;
+Test;ID;Wait_Frame_ERP1.lvclass;;;{"Frame Type":"Teach IN","R-org":"A5","TimeOut":30000};;;No;No
+Test;Func;Check_Func.lvclass;;;;8;8;No;No
+Test;Type;Check_Type.lvclass;;;;20;20;No;No
+Test;RSSI;RSSI_Enocean.lvclass;;;;0;100;No;No
+Function;Hide Button;Hide_Operator_Information.lvclass;;;;;;No;No
+*------------------------------------Print------------------------------------------
+*Main Test;Print Label;;;;;;;;
+*Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_CAB.lvclass;"<PathLabel>\\LabelPCBA.lbl";;;Yes;No

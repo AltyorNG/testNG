@@ -1,0 +1,13 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel
+Main Test;Scan EMS;;;;;;;;
+Test;EMS Code;Enter_EMS_Code.lvclass;;;{"Lenght Code":11,"Tag code":"EPH"};;;Yes;No
+Main Test;Flash Data;;;;;;;;
+Function;ShowInformationC;Wait_CloseFixture.lvclass;DIO;Class DIO NI.lvclass;{"Function":"Read","Information_Operator":"\n\nFermer\nle\nfixture","Line":7,"Ok_Button_Visible":false,"Path*_Picture":"<PathParameter>\IHM Picture\Close_Fixture.bmp","Port":0,"Timeout (ms)":300000000};;;No;No
+Test;Flash Data;Flash_AVRDUDE.lvclass;;;{"Device":"t10","Frequency":"93.75","Path FW ":"<PathFW>\\Data","Working *Directory":"<Path>\\AVRDUDE"};;;Yes;No
+Main Test;Flash FW;;;;;;;;
+Test;Flash FW;Flash_Jlink.lvclass;;;{"Connection_Type":"JTAG","Device":"CC2652R1F","Frequency":"4000","Path FW *":"<PathFW>\\FW","Working Directory":"<Path>\\JLink"};;;No;No
+Function;ShowInformationO;Wait_OpenFixture.lvclass;DIO;Class DIO *NI.lvclass;{"Function":"Read","Information_Operator":"\n\nOuvrir\nle\nfixture","Line":7,"Ok_Button_Visible":false,"Path_Picture":"<PathParameter>\IHM Picture\Open_Fixture.bmp","Port":0,"Timeout (ms)":300000000};;;No;No
+Main Test;LED Test;;;;;;;;
+Test;Check LED;Operator_Control.lvclass;;;{"Information_Operator":"\nla LED \ndoit etre\nrouge","Path_Picture":"<PathParameter>\IHM Picture\LED.bmp"};;;No;No
+*Main Test;Print Label;;;;;;;;
+*Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_CAB.lvclass;"<PathLabel>\\LabelPCBA.lbl";;;Yes;No

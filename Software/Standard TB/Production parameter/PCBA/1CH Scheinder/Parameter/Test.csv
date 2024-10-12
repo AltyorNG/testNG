@@ -1,0 +1,47 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel;Mandatory
+***********************Init*******************************
+Main Test;Initialization;;;;;;;;
+*Function;Init Power supply;Init_Power_Supply.lvclass;Power_Supply;;{"Channel":0,"Current":1,"Voltage":3.3};;;No;No
+*Function;Enable Power;Enable_Power_Supply.lvclass;Power_Supply;;;;;No;No
+*Function;Delay;Delay.lvclass;;;2000;;;No;No
+Function;Generate SN;Nodon_Generate_SN.lvclass;Database;;{"Project":"2313","Line":"B"};;;No;No
+*************************************************************
+*Main Test;Flash CW FW;;;;;;;;
+*Function;Enable Jlink;Enable_DIO.lvclass;DIO;;{"Line":3,"Port":1};;;No;No
+*Test;Flash CW FW;Flash_SIN_Test_FW.lvclass;;;{"Bat path":"<PathFW>\\Test\\Flash_CW.bat","Firmware path":"<PathFW>\\Test\\P1890_FW_CW_2458.hex","commander path":"<Path>\\Commander\\commander.exe"};;;Yes;No
+*Function;Disable Jlink;Disable_DIO.lvclass;DIO;;{"Line":3,"Port":1};;;No;No
+***********************RF Test*******************************
+*Main Test;RF Test;;;;;;;;
+*Function;Init;Init_SpectumAnalyser.lvclass;Spectrum;;{"Center Freq (MHz)":2450,"Freq Span (MHz)":50,"Ref Level (dBm)":10,"Threshold (dBm)":-40};;;No;No
+*Test;Frenquency;Read_Frequency.lvclass;Spectrum;;;2454;2455;No;No
+*Test;Power RF;Read_PowerRF.lvclass;Spectrum;;;-40.000;-15.000;No;No
+*************************************************************
+***********************Flash Final FW*******************************
+Main Test;Flash Final FW;;;;;;;;
+*Function;Enable Jlink;Enable_DIO.lvclass;DIO;;{"Line":3,"Port":1};;;No;No
+Function;Generate Install Code;Generate_Install_Code.lvclass;;;{"Path File InstallCode":"<PathFW>\\FW\\Security\\install-code.txt","Store With CRC":true};;;No;No
+Test;Flash Final FW;Flash_SIN_FP.lvclass;;;{"Bat path":"<PathFW>\\FW\\Flash.bat","Bootloader path":"<PathFW>\\FW\\Bootloade.hex","Firmware path":"<PathFW>\\FW\\FW.gbl","Security path":"<PathFW>\\FW\\Security","commander path":"<Path>\\Commander\\commander.exe"};;;Yes;No
+Test;MAC Addr;Get_Mac_Addr.lvclass;;;{"Bat path":"<PathFW>\\FW\\Get_Addr_Mac.bat","commander path":"<Path>\\Commander\\commander.exe"};;;No;No
+Test;Install Code;Get_Install_Code.lvclass;;;{"Bat path":"<PathFW>\\FW\\Get_Install_Code.bat","commander path":"<Path>\\Commander\\commander.exe"};;;No;No
+*Function;Disable Jlink;Disable_DIO.lvclass;DIO;;{"Line":3,"Port":1};;;No;No
+Function;Generate Add Info;additional_information_generation_SIN.lvclass;;;;;;No;No
+*************************************************************
+***********************LED Test*******************************
+*Main Test;LED Test;;;;;;;;
+*Function;Enable P0L4;Enable_DIO.lvclass;DIO;;{"Line":4,"Port":0};;;No;No
+*Function;Enable P0L5;Enable_DIO.lvclass;DIO;;{"Line":5,"Port":0};;;No;No
+*Test;HUE Test Red;Read_HUE_LED.lvclass;LED;;1;0;10;No;No
+*Function;Enable P0L3;Enable_DIO.lvclass;DIO;;{"Line":3,"Port":0};;;No;No
+*Test;HUE Test Green;Read_HUE_LED.lvclass;LED;;1;118;122;No;No
+*Function;Disable P0L3;Disable_DIO.lvclass;DIO;;{"Line":3,"Port":0};;;No;No
+*Function;Disable P0L4;Disable_DIO.lvclass;DIO;;{"Line":4,"Port":0};;;No;No
+*Function;Disable P0L5;Disable_DIO.lvclass;DIO;;{"Line":5,"Port":0};;;No;No
+*************************************************************
+**************************End********************************
+*Main Test;End;;;;;;;;
+*Function;Enable Power;Disable_Power_Supply.lvclass;Power_Supply;;;;;No;No
+*Function;Init Power supply;Init_Power_Supply.lvclass;Power_Supply;;{"Channel":0,"Current":0,"Voltage":0};;;No;No
+*************************************************************
+**************************Print********************************
+*Main Test;Print Label;;;;;;;;
+*Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_CAB.lvclass;"<PathLabel>\\LabelPCBA.lbl";;;Yes;No

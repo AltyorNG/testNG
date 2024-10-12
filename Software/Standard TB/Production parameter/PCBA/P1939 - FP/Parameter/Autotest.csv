@@ -1,0 +1,10 @@
+Name Instrument;Class Instr;Parameter Init (Json)
+*Database;Firebase Benches.lvclass;{"API_Key":"AIzaSyBTwCMO9PaXsM5I0oUz5bf7NZlT3IzL36I","Name_BDD":"p2124-nodon-stp-test"}
+Database;Database Altyor.lvclass;{"Connection Name ODBC":"BDDTestBench","DatabaseName":"bdd"}
+Relay;Class Relay_Board 8_Relay_RY408D.lvclass;{"Address Board":"1","Device_Com_Port":"COM10"}
+Multi_Current;Class Multimeter Rigol DM3058.lvclass;USB0::0x1AB1::0x09C4::DM3R260400236::INSTR
+Multi_Voltage;Class Multimeter Rigol DM3058.lvclass;USB0::0x1AB1::0x09C4::DM3R260400240::INSTR
+FTDI;Class UART Nodon.lvclass;{"Address Device":"COM15","Baud Rate":57600,"Data Bit":8,"Enable Termination":false,"flow control (0:none)":0,"parity (0:none)":"None","stop bits (10: 1 bit)":10,"termination char ":10}
+LogFile;Class Log_File Altyor.lvclass;{"Path Historic":"<PathLog>\\Log.csv"}
+*DIO;Class DIO NI.lvclass;;;
+*Printer;Class Printer_CAB.lvclass;"COM1";

@@ -1,0 +1,7 @@
+Name Instrument;Class Instr;Parameter Init (Json)
+*Database;Firebase Benches.lvclass;{"API_Key":"AIzaSyBTwCMO9PaXsM5I0oUz5bf7NZlT3IzL36I","Name_BDD":"p2124-nodon-stp-test"}
+Database;Database Altyor.lvclass;{"Connection Name ODBC":"BDDTestBench","DatabaseName":"bdd"}
+Relay;Class Relay_Board 16_Relay_R4D3B16.lvclass;{"Address Board":"1","Device_Com_Port":"COM6"}
+Multi_Voltage;Class Multimeter Rigol DM3058.lvclass;USB0::0x1AB1::0x09C4::DM3R182200845::INSTR
+Power_Supply;Class Power_Supply Rigol DP800.lvclass;USB0::0x1AB1::0x0E11::DP8C181701150::INSTR
+*Printer;Class Printer_TSC.lvclass;"COM1";

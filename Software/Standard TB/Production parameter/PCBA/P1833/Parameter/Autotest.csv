@@ -1,0 +1,4 @@
+Name Instrument;Class Instr;Parameter Init (Json)
+Database;Firebase AssembledProducts.lvclass;{"API_Key":"AIzaSyCCB3PYsbNf6A-ApfRR0UIEuIZQ7V_1WIg","Name_BDD":"p1833-fluidra-sin-zb-test"}
+*Database;Firebase AssembledProducts.lvclass;{"API_Key":"AIzaSyBO4ZXqQ3ksFsUu0s_WGjiBbZfgf7gsqxI","Name_BDD":"p1833-fluidra-sin-zb-prod"}
+Printer;Class Printer_TSC.lvclass;"TSC TX310";

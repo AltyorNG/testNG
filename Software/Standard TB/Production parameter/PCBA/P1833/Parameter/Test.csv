@@ -1,0 +1,8 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel
+*-------------------------------------Scan-------------------------------------------
+Main Test;Scan ID;;;;;;;;
+Test;Scan;P1833_Scan_QRCode.lvclass;;;{"PRCE"="^SRC.[0-9A-F]{5}.[0-9]{11}.[0-9A-F]{9}"};;;Yes;No
+Test;Access Code;P1833_Access_Code.lvclass;;;;;;No;No
+*------------------------------------Flash------------------------------------------
+Main Test;Print Label;;;;;;;;
+Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_CAB.lvclass;"<PathLabel>\\Label.lbl";;;Yes;No

@@ -1,0 +1,23 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel
+Main Test;Generate SN;;;;;;;;
+Function;Generate SN;Generate_SN.lvclass;;;{"Class SN":"Creation_SN_Nodon.lvclass","Product Number":"002","Protocol":"2"};;;No;Yes
+Main Test;Scan ID;;;;;;;;
+Test;SN Code;Enter_ID_Enocean.lvclass;;;{"Lenght Code":88,"Tag code":"30S"};;;Yes;No
+Main Test;Wait Press;;;;;;;;
+Test;ID;Wait_Frame_ERP1.lvclass;;;{"R-org":"A5","TimeOut":30000};;;No;No
+Test;Func;Check_Func.lvclass;;;{"Func":"8"};;;No;No
+Test;Type;Check_Type.lvclass;;;{"Type":"20"};;;No;No
+Test;RSSI;RSSI_Enocean.lvclass;;;;0;100;No;No
+*Main Test;Print Label;;;;;;;;
+*Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_CAB.lvclass;"<PathLabel>\\LabelAssy.lbl";;;Yes;No
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+

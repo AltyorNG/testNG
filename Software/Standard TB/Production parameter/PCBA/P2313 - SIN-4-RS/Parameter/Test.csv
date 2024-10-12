@@ -1,0 +1,191 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel;Mandatory
+***********************Init*******************************
+Main Test;Init;;;;;;;;
+*Function;Alim UART;Enable_Relay.lvclass;Relay;;3;;;No;No
+*Function;Enable 220V;Enable_Relay.lvclass;Relay;;2;;;No;No
+Function;Enable 24V;Disable_Relay.lvclass;Relay;;2;;;No;No
+Function;Enable Jack Product;Enable_Relay.lvclass;Relay;;6;;;No;No
+Function;Enable PWR SIN;Enable_Relay.lvclass;Relay;;1;;;No;No
+Function;ShowInformationC;Wait_OpenFixture.lvclass;DIO;Class DIO NI.lvclass;{"Function":"Read","Information_Operator":"\n Placer la carte PCBA sur le support,\n puis fermer le fixture","Line":0,"Ok_Button_Visible":false,"Path_Picture":"<PathParameter>\IHM Picture\Close_Fixture.bmp","Port":0,"Timeout (ms)":300000000};;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+***********************Programming***************************
+Main Test;Programing;;;;;;;;
+*Function;Close UART;Close_Instr.lvclass;FTDI;;;;;No;No
+*Function;Alim pwr;Enable_Relay.lvclass;Relay;;1;;;No;No
+Test;Flash FW;Flash_STM32.lvclass;;;{"Connection_Type":"SWD","Path FW":"<PathFW>\\FW","Working Directory":"C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin"};;;Yes;No
+***********************Setting*******************************
+Main Test;Setting;;;;;;;;
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Test;Write Product ID RS;Nodon_Set_Product_ID.lvclass;FTDI;;{"Product ID  (Hex)":"09"};;;No;No
+Test;Read Product ID;Nodon_Get_Product_ID.lvclass;FTDI;;;;;No;No
+Test;Write Brand ID;Nodon_Set_Brand_ID.lvclass;FTDI;;{"Brand ID  (Hex)":"01"};;;No;No
+Test;Read Brand ID;Nodon_Get_Brand_ID.lvclass;FTDI;;;;;No;No
+Test;FW Version;Nodon_Get_FW_Version.lvclass;FTDI;;;010401;010401;No;No
+Test;Write HW Version;Nodon_Set_HardwareVersion.lvclass;FTDI;;{"Version  (Hex)":"060505"};;;No;No
+Test;Read HW Version;Nodon_Get_HW_Version.lvclass;FTDI;;;;;No;No
+Test;Calibraion Auto;Nodon_Set_Auto_Calibration_RS.lvclass;FTDI;;;;;No;No
+
+***********************Test Button*******************************
+Main Test;BP Test;;;;;;;;
+Function;Press Button;Enable_Relay.lvclass;Relay;;5;;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Test;Result Press;Nodon_Get_BP_Status.lvclass;FTDI;;;01;01;No;No
+Function;Release Button;Disable_Relay.lvclass;Relay;;5;;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Test;Result Press;Nodon_Get_BP_Status.lvclass;FTDI;;;02;02;No;No
+Function;Close DIO;Close_Instr.lvclass;DIO;;;;;No;No
+***********************PWR 220V*******************************
+Main Test;PWR 220V;;;;;;;;
+Function;Alim PWR;Disable_Relay.lvclass;Relay;;1;;;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Function;Enable 220V;Enable_Relay.lvclass;Relay;;2;;;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Function;Alim PWR;Enable_Relay.lvclass;Relay;;1;;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Test;CMD UP;Nodon_Set_State_RS.lvclass;FTDI;;{"State":"Up"};;;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Test;CMD Stop;Nodon_Set_State_RS.lvclass;FTDI;;{"State":"Stop"};;;No;No
+*******************************ZCR CH1********************************
+*------------------Start Ana Acquition--------------------------------
+Main Test;Ana CH1;;;;;;;;
+Function;Acquit Ana;Start_Continuous_Ana.lvclass;Ana;;{"Channel":[0,1],"Input terminal Configuration":"RSE","Nb Data_To_Read":500,"Nb Sample":5000,"Rate":5000,"Voltage Max":10,"Voltage Min":-10};;;No;Yes
+*------------------Calibration ZCR Channel 1------------------------------------
+Main Test;ZCR Channel 1;;;;;;;;
+Function;Enable AI0;Enable_Relay.lvclass;Relay;;7;;;No;No
+Test;Start ZCR CH1;Nodon_Start_ZCR.lvclass;FTDI;;{"Channel":"1", "Action":"01","Controle_ZCR":false};;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Test;Stop ZCR CH1;Nodon_Start_ZCR.lvclass;FTDI;;{"Channel":"1", "Action":"00","Controle_ZCR":false};;;No;No
+Function;Stop Ana;Stop_Ana.lvclass;Ana;;;;;No;No
+Function;Disable AI0;Disable_Relay.lvclass;Relay;;7;;;No;No
+Test;Set ZCR CH1;Nodon_Set_ZCR_Calibration.lvclass;FTDI;;;;;No;No
+Test;Delta ZCR On CH1;Nodon_ZCR_Delta_ON.lvclass;;;;0;100;No;No
+Test;Delta ZCR Off CH1;Nodon_ZCR_Delta_OFF.lvclass;;;;0;100;No;No
+Test;CMD UP;Nodon_Set_State_RS.lvclass;FTDI;;{"State":"Up"};;;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Test;CMD Stop;Nodon_Set_State_RS.lvclass;FTDI;;{"State":"Stop"};;;No;No
+*+++++++++++++++++++++++++++++Control Calibration CH1++++++++++++++++++++++++++++++++++++++++++++
+*----------------------Start Ana Acquition for check--------------------------------
+Main Test;Ana Check CH1;;;;;;;;
+Function;Acquit Check Ana;Start_Continuous_Ana.lvclass;Ana;;{"Channel":[0,1],"Input terminal Configuration":"RSE","Nb Data_To_Read":500,"Nb Sample":5000,"Rate":5000,"Voltage Max":10,"Voltage Min":-10};;;No;Yes
+*------------------Check ZCR Channel 1------------------------------------
+Main Test;Check ZCR Channel 1;;;;;;;;
+Function;Enable AI0;Enable_Relay.lvclass;Relay;;7;;;No;No
+Test;Start ZCR CH1;Nodon_Start_ZCR.lvclass;FTDI;;{"Channel":"1", "Action":"01","Controle_ZCR":true};;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Test;Stop ZCR CH1;Nodon_Start_ZCR.lvclass;FTDI;;{"Channel":"1", "Action":"00","Controle_ZCR":true};;;No;No
+Function;Disable AI0;Disable_Relay.lvclass;Relay;;7;;;No;No
+Function;Stop Ana;Stop_Ana.lvclass;Ana;;;;;No;No
+Test;Check ZCR CH1;Nodon_Check_ZCR_Calibration.lvclass;;;;;;No;No
+Test;Delta ZCR On CH1 Calibred;Nodon_ZCR_Delta_ON.lvclass;;;;0;2;No;No
+Test;Delta ZCR Off CH1 Calibred;Nodon_ZCR_Delta_OFF.lvclass;;;;0;2;No;No
+Test;CMD UP;Nodon_Set_State_RS.lvclass;FTDI;;{"State":"Up"};;;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Test;CMD Stop;Nodon_Set_State_RS.lvclass;FTDI;;{"State":"Stop"};;;No;No
+*++++++++++++++++++++++++++++End Control +++++++++++++++++++++++++++++++++++++++++++++
+*****************************End ZCR CH1********************************
+*
+*******************************ZCR CH2********************************
+*------------------Start Ana Acquition--------------------------------
+Main Test;Ana ZCR CH2;;;;;;;;
+Function;Acquit Ana;Start_Continuous_Ana.lvclass;Ana;;{"Channel":[0,2],"Input terminal Configuration":"RSE","Nb Data_To_Read":500,"Nb Sample":5000,"Rate":5000,"Voltage Max":10,"Voltage Min":-10};;;No;Yes
+*------------------Calibration ZCR Channel 2------------------------------------
+Main Test;ZCR Channel 2;;;;;;;;
+Function;Enable AI0;Enable_Relay.lvclass;Relay;;8;;;No;No
+Test;Start ZCR CH2;Nodon_Start_ZCR.lvclass;FTDI;;{"Channel":"2", "Action":"01","Controle_ZCR":false};;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Test;Stop ZCR CH2;Nodon_Start_ZCR.lvclass;FTDI;;{"Channel":"2", "Action":"00","Controle_ZCR":false};;;No;No
+Function;Stop Ana;Stop_Ana.lvclass;Ana;;;;;No;No
+Function;Disable AI0;Disable_Relay.lvclass;Relay;;8;;;No;No
+Test;Set ZCR CH2;Nodon_Set_ZCR_Calibration.lvclass;FTDI;;;;;No;No
+Test;Delta ZCR On CH2;Nodon_ZCR_Delta_ON.lvclass;;;;0;100;No;No
+Test;Delta ZCR Off CH2;Nodon_ZCR_Delta_OFF.lvclass;;;;0;100;No;No
+Test;CMD UP;Nodon_Set_State_RS.lvclass;FTDI;;{"State":"Up"};;;No;No
+Test;CMD Stop;Nodon_Set_State_RS.lvclass;FTDI;;{"State":"Stop"};;;No;No
+*+++++++++++++++++++++++++++++Control Calibration CH2++++++++++++++++++++++++++++++++++++++++++++
+*----------------------Start Ana Acquition for check--------------------------------
+Main Test;Ana ZCR Check CH2;;;;;;;;
+Function;Acquit Check Ana;Start_Continuous_Ana.lvclass;Ana;;{"Channel":[0,2],"Input terminal Configuration":"RSE","Nb Data_To_Read":500,"Nb Sample":5000,"Rate":5000,"Voltage Max":10,"Voltage Min":-10};;;No;Yes
+*------------------Check ZCR Channel 2------------------------------------
+Main Test;Check ZCR Channel 2;;;;;;;;
+Function;Enable AI0;Enable_Relay.lvclass;Relay;;8;;;No;No
+Test;Start ZCR CH2;Nodon_Start_ZCR.lvclass;FTDI;;{"Channel":"2", "Action":"01","Controle_ZCR":true};;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Test;Stop ZCR CH2;Nodon_Start_ZCR.lvclass;FTDI;;{"Channel":"2", "Action":"00","Controle_ZCR":true};;;No;No
+Function;Disabe AI0;Disable_Relay.lvclass;Relay;;8;;;No;No
+Function;Stop Ana;Stop_Ana.lvclass;Ana;;;;;No;No
+Test;Check ZCR CH2;Nodon_Check_ZCR_Calibration.lvclass;;;;0;2;No;No
+Test;Delta ZCR On CH2 Calibred;Nodon_ZCR_Delta_ON.lvclass;;;;0;2;No;No
+Test;Delta ZCR Off CH2 Calibred;Nodon_ZCR_Delta_OFF.lvclass;;;;0;2;No;No
+Test;CMD UP;Nodon_Set_State_RS.lvclass;FTDI;;{"State":"Up"};;;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Test;CMD Stop;Nodon_Set_State_RS.lvclass;FTDI;;{"State":"Stop"};;;No;No
+*++++++++++++++++++++++++++++End Control +++++++++++++++++++++++++++++++++++++++++++++
+*****************************End ZCR CH2********************************
+*
+*******************************Switch UP********************************
+Main Test;Check UP;;;;;;;;
+Function;Enable UP;Enable_Relay.lvclass;Relay;;3;;;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Test;Check Down UP;Nodon_Get_Switch_Status.lvclass;FTDI;;{"Switch":"02"};0201;0201;No;No
+Function;Disable UP;Disable_Relay.lvclass;Relay;;3;;;No;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Test;Check UP Off;Nodon_Get_Switch_Status.lvclass;FTDI;;{"Switch":"02"};0202;0202;No;No
+
+************************************************************************
+*
+*******************************Switch Down********************************
+Main Test;Check Down;;;;;;;;
+Function;Disable Down;Disable_Relay.lvclass;Relay;;4;;;No;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Test;Check Down Off;Nodon_Get_Switch_Status.lvclass;FTDI;;{"Switch":"01"};0102;0102;No;No
+Function;Enable Down;Enable_Relay.lvclass;Relay;;4;;;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Test;Check Down ON;Nodon_Get_Switch_Status.lvclass;FTDI;;{"Switch":"01"};0101;0101;No;No
+Function;Disable SW1;Disable_Relay.lvclass;Relay;;3;;;No;No;No
+Function;Disable SW2;Disable_Relay.lvclass;Relay;;4;;;No;No;No
+************************************************************************
+
+*******************************Metering********************************
+*------------------Start Ana Acquition CH1 UP--------------------------------
+Main Test;Start Ana UP;;;;;;;;
+Function;Acquit Ana UP;Start_Continuous_Ana.lvclass;Ana;;{"Channel":[0,1],"Input terminal Configuration":"RSE","Nb Data_To_Read":500,"Nb Sample":5000,"Rate":5000,"Voltage Max":10,"Voltage Min":-10};;;No;Yes
+*------------------Check UP------------------------------------
+Main Test;Metering CH1 UP;;;;;;;;
+Function;Enable AI0;Enable_Relay.lvclass;Relay;;7;;;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Test;Start Calibraion;Nodon_Start_Calibration_RS.lvclass;FTDI;;;;;No;No
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Function;Disable SW1;Enable_Relay.lvclass;Relay;;8;;;No;No;No
+Function;Disable SW1;Disable_Relay.lvclass;Relay;;7;;;No;No;No
+Function;Stop Ana;Stop_Ana.lvclass;Ana;;;;;No;No
+Test;Voltage CH2;Nodon_NI_Voltage_Channel_Check.lvclass;FTDI;;;2;3.5;No;No
+
+*------------------Start Ana Acquition CH2--------------------------------
+Main Test;Start Ana Down;;;;;;;;
+Function;Acquit Ana Down;Start_Continuous_Ana.lvclass;Ana;;{"Channel":[0,2],"Input terminal Configuration":"RSE","Nb Data_To_Read":500,"Nb Sample":5000,"Rate":5000,"Voltage Max":10,"Voltage Min":-10};;;No;Yes
+*------------------Calibration RS------------------------------------
+Main Test;Metering CH2 Down;;;;;;;;
+Function;Delay;Delay.lvclass;;;500;;;No;No
+Function;Stop Ana;Stop_Ana.lvclass;Ana;;;;;No;No
+Function;Disable AI0;Disable_Relay.lvclass;Relay;;8;;;No;No
+Test;Stop Calibraion;Nodon_Stop_Calibration_RS.lvclass;FTDI;;;;;No;No
+Test;Voltage CH2;Nodon_NI_Voltage_Channel_Check.lvclass;FTDI;;;2;3.5;No;No
+
+
+*******************************End Metering********************************
+*
+***************************End********************************
+Main Test;End;;;;;;;;
+*Function;Open DIO;Open_Instr.lvclass;DIO;;;;;No;No;Yes
+Function;Disable PWR SIN;Disable_Relay.lvclass;Relay;;1;;;No;No;Yes
+Function;Enable 24V;Disable_Relay.lvclass;Relay;;2;;;No;Yes
+Function;Disable SW1;Disable_Relay.lvclass;Relay;;3;;;No;No;Yes
+Function;Disable SW2;Disable_Relay.lvclass;Relay;;4;;;No;No;Yes
+Function;Disable SW2;Disable_Relay.lvclass;Relay;;7;;;No;No;Yes
+Function;Disable SW2;Disable_Relay.lvclass;Relay;;8;;;No;No;Yes
+Function;Enable Jack Product;Disable_Relay.lvclass;Relay;;6;;;No;No;Yes
+Function;Release Button;Disable_Relay.lvclass;Relay;;5;;;No;No
+Function;ShowInformationO;Wait_CloseFixture.lvclass;DIO;;{"Function":"Read","Information_Operator":"\n\nOuvrir\nle\nfixture","Line":0,"Ok_Button_Visible":false,"Path_Picture":"<PathParameter>\IHM Picture\Open_Fixture.bmp","Port":0,"Timeout (ms)":300000000};;;No;No
+***************************Print********************************
+*Main Test;Print Label;;;;;;;;
+*Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_CAB.lvclass;"<PathLabel>\\LabelPCBA.lbl";;;Yes;No

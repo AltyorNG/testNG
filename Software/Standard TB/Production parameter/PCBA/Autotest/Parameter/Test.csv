@@ -1,0 +1,6 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel
+***********************Init*******************************
+Main Test;Delay;;;;;;;;;
+Function;Delay;Delay.lvclass;;;20000;;;Yes;No
+*Main Test;SN;;;;;;;;
+*Test;Generate SN;Nodon_Generate_SN.lvclass;Database;;{"Project":"2313","Line":"2"};;;No;No

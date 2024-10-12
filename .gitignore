@@ -1,0 +1,7 @@
+# Ignorer les fichiers compilés
+*.exe
+*.dll
+
+
+# Ignorer les dossiers de build
+/Builds/

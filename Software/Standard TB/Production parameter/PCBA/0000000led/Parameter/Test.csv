@@ -1,0 +1,7 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel;Mandatory
+***********************Init*******************************
+Main Test;led;;;;;;;;
+Test;Release Button;Read_HUE_LED.lvclass;led;;1;;;No;No
+**************************Print********************************
+*Main Test;Print Label;;;;;;;;
+*Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_CAB.lvclass;"<PathLabel>\\LabelPCBA.lbl";;;Yes;No

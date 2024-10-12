@@ -1,0 +1,7 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel
+*-------------------------------Scan SN-------------------------------------------
+Main Test;Scan SN;;;;;;;;
+Test;SN Antenna;Nodon_Scan_SN.lvclass;;;{"PRCE":"\d{4}2\d{8}"};;;No;Yes
+Function;Addr_Mac;Get_Addr_Mac_DB_AIS.lvclass;Database3;;;;;No;No
+Function;Key;Get_Key_DB_AIS.lvclass;Database3;;;;;No;No
+*-------------------------------Int Zigbee Network-------------------------------------------Database3

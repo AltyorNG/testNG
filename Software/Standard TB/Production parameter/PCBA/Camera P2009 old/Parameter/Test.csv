@@ -1,0 +1,26 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel
+Main Test;Scan EMS;;;;;;;;
+Test;EMS Code;Enter_EMS_Code.lvclass;;;{"Lenght Code":10,"Tag code":"EP"};;;Yes;No
+Main Test;Blink;;;;;;;;
+Function;Reset relay;Reset_All_Relay.lvclass;Relay;;;;;No;No
+Function;Start Blink;Start_Blink_Relay.lvclass;Relay;;{"Relay Ok":1,"Relay NOk":3,"Relay":2,"Time Off":1000,"Time On":1000};;;No;Yes
+Main Test;Presence pile;;;;;;;;
+Test;Presence pile;Pattern_Matching.lvclass;Camera;;{"Number Prog":"000","Test Number":1,"Timeout":30000};0;100;No;No
+Main Test;Couleur;;;;;;;;
+Test;Couleur;Pattern_Matching.lvclass;Camera;;{"Number Prog":"000","Test Number":3,"Timeout":30000};0;100;No;No
+Main Test;Presence PCBA;;;;;;;;
+Test;Presence PCBA;Pattern_Matching.lvclass;Camera;;{"Number Prog":"000","Test Number":5,"Timeout":30000};75;100;No;No
+Main Test;Presence Verou;;;;;;;;
+Test;Presence verou;Pattern_Matching.lvclass;Camera;;{"Number Prog":"000","Test Number":6,"Timeout":30000};75;100;No;No
+Main Test;Presence Panneau;;;;;;;;
+Test;Presence Panneau;Pattern_Matching.lvclass;Camera;;{"Number Prog":"000","Test Number":7,"Timeout":30000};60;100;No;No
+Main Test;Fils;;;;;;;;
+Test;Fil 1;Pattern_Matching.lvclass;Camera;;{"Number Prog":"000","Test Number":8,"Timeout":30000};0;100;No;No
+Test;Fil 2;Pattern_Matching.lvclass;Camera;;{"Number Prog":"000","Test Number":9,"Timeout":30000};0;100;No;No
+Test;Fil 4;Pattern_Matching.lvclass;Camera;;{"Number Prog":"000","Test Number":10,"Timeout":30000};0;100;No;No
+Main Test;Position verou;;;;;;;;
+Test;Position verou;Pattern_Matching.lvclass;Camera;;{"Number Prog":"001","Test Number":1,"Timeout":30000};5;100;No;No
+Function;Stop Blink;Stop_Blink_Relay.lvclass;Relay;;;;;No;No
+Function;Show_Result;Show_Result_Relay.lvclass;Relay;;{"Relay Ok":1,"Relay NOk":3};;;No;No
+*Main Test;Print Label;;;;;;;;
+*Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_CAB.lvclass;"<PathLabel>\\LabelPCBA.lbl";;;Yes;No

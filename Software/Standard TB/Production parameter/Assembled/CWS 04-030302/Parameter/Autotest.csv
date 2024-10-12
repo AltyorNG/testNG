@@ -1,0 +1,7 @@
+Name Instrument;Class Instr;Parameter Init (Json)
+Database;Firebase AssembledProducts.lvclass;{"API_Key":"AIzaSyBlFrJmVUVgoENcEj7xcy2oF3ZGv_bNhD4","Name_BDD":"p2222-nodon-cws-prod"}
+*Database;Database Altyor.lvclass;{"Connection Name ODBC":"BDDTestBench","DatabaseName":"bdd"}
+Balance;Class Balance_Adam_GBK.lvclass;{"Address Device":"COM20","Timeout":5000}
+*LogFile;Class Log_File Altyor.lvclass;{"Path Historic":"<PathLog>\\Log.csv"}
+*DIO;Class DIO NI.lvclass;;;
+Printer;Class Printer_CAB.lvclass;"COM19";

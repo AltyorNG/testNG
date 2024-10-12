@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <configVersion>1</configVersion>
+  <updateCheck>1702894318</updateCheck>
+  <skipVersion>
+    <Major>0</Major>
+    <Minor>0</Minor>
+  </skipVersion>
+  <toolTips>true</toolTips>
+  <avrdudeLoc />
+  <avrdudeConfLoc />
+  <avrSizeLoc />
+  <windowLocation>
+    <X>115</X>
+    <Y>52</Y>
+  </windowLocation>
+  <language>english</language>
+  <hiddenMCUs />
+  <hiddenProgrammers />
+  <previousSettings>
+    <programmer>usbasp</programmer>
+    <mcu>t10</mcu>
+    <port>usb</port>
+    <baud />
+    <bitclock />
+    <flashFile>C:\Users\ngarcin\Altyor\P2265-SCHNEIDER ELECTRIC-ZIGBEE KNX BRIDGE - PROJECT DOCUMENTS\10-MANUFACTURING PRODUCT\TEST BENCH\Test bench FW files\attiny10_firmware.hex</flashFile>
+    <flashFormat>a</flashFormat>
+    <flashOp>w</flashOp>
+    <EEPROMFile />
+    <EEPROMFormat>a</EEPROMFormat>
+    <EEPROMOp>w</EEPROMOp>
+    <force>true</force>
+    <disableVerify>true</disableVerify>
+    <disableFlashErase>false</disableFlashErase>
+    <eraseFlashAndEEPROM>true</eraseFlashAndEEPROM>
+    <doNotWrite>false</doNotWrite>
+    <lfuse />
+    <hfuse />
+    <efuse />
+    <setFuses>false</setFuses>
+    <lockBits />
+    <setLock>false</setLock>
+    <additional />
+    <verbosity>0</verbosity>
+    <name />
+  </previousSettings>
+  <usePreviousSettings>true</usePreviousSettings>
+  <windowSize>
+    <Width>1012</Width>
+    <Height>879</Height>
+  </windowSize>
+  <checkForUpdates>true</checkForUpdates>
+</ConfigData>

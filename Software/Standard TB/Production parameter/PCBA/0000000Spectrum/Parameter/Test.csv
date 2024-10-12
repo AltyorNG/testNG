@@ -1,0 +1,9 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel;Mandatory
+***********************Init*******************************
+Main Test;led;;;;;;;;
+Function;Init;Init_SpectumAnalyser.lvclass;Spectrum;;{"Center Freq (MHz)":433,"Freq Span (MHz)":5,"Ref Level (dBm)":10,"Threshold (dBm)":-71};;;No;No
+Test;Release Button;Read_Frequency.lvclass;Spectrum;;;;;No;No
+Test;Release Button;Read_PowerRF.lvclass;Spectrum;;;;;No;No
+**************************Print********************************
+*Main Test;Print Label;;;;;;;;
+*Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_CAB.lvclass;"<PathLabel>\\LabelPCBA.lbl";;;Yes;No

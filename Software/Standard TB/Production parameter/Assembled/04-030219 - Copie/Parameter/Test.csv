@@ -1,0 +1,17 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel
+Main Test;Generate SN;;;;;;;;
+Function;Generate SN;Generate_SN.lvclass;;;{"Class SN":"Creation_SN_P2265.lvclass"};;;No;Yes
+Main Test;Scan EMS;;;;;;;;
+Test;EMS Code;Enter_EMS_Code.lvclass;;;{"Lenght Code":11,"Tag code":"EPH"};;;Yes;No
+*Test;SN Code;Enter_SN.lvclass;;;{"Lenght Code":16,"Tag code":"RN"};;;Yes;No
+*Main Test;Boot Test;;;;;;;;
+*Test;Boot IEEE;P2265_Boot_IEEE.lvclass;;;;;;No;Yes
+*Test;Boot FW;P2265_Boot_FW.lvclass;;;;;;No;Yes
+*Main Test;Switch Test;;;;;;;;
+*Test;Switch On;P2265_SwitchOn_Test.lvclass;Relay;Class Relay_Board 16_Relay_R4D3B16.lvclass;1;0;150;No;No
+*Test;Switch Off;P2265_SwitchOff_Test.lvclass;;;1;0;150;No;No
+*Main Test;LED Test;;;;;;;;
+*Test;Check LED;Operator_Control.lvclass;;;{"Information_Operator":"\nla LED \ndoit etre\nJaune","Path_Picture":"<PathParameter>\IHM Picture\LED.bmp"};;;No;No   
+Main Test;Print Label;;;;;;;;
+Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_CAB.lvclass;"<PathLabel>\\LabelAssy.lbl";;;Yes;No
+*Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_TSC.lvclass;"<PathLabel>\\LabelAssy.lbl";;;Yes;No

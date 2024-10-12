@@ -1,0 +1,10 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel
+***********************Init*******************************
+Main Test;Delay
+
+*Function;Close;Close_ShieldingBox.lvclass;;;;;;No;No
+Function;ShowInformationC;Wait_CloseShielding.lvclass;ShieldingBox;;{"Information_Operator":"\n\nclose\nle\nfixture","Ok_Button_Visible":false,"Path_Picture":"<PathParameter>\IHM Picture\Open_Fixture.bmp","Timeout (ms)":10000};;;No;No
+Function;Delay;Delay.lvclass;;;2000;;;Yes;No
+Function;Open;Open_ShieldingBox.lvclass;;;;;;No;No
+*Main Test;SN;;;;;;;;
+*Test;Generate SN;Nodon_Generate_SN.lvclass;Database;;{"Project":"2313","Line":"2"};;;No;No

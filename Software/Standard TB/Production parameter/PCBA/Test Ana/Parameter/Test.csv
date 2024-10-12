@@ -1,0 +1,14 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel;Mandatory
+
+***********************Programming***************************
+Main Test;Ana;;;;;;;;
+Function;Close DIO;Close_Instr.lvclass;DIO;;;;;No;Yes
+Function;Acquit Ana;Start_Continuous_Ana.lvclass;Ana;;{"Channel":[0,1],"Input terminal Configuration":"RSE","Nb Data_To_Read":500,"Nb Sample":1000,"Rate":1000,"Voltage Max":10,"Voltage Min":-10};;;No;No
+***********************Setting*******************************
+Main Test;Acquit;;;;;;;;
+Function;Delay;Delay.lvclass;;;10000;;;No;No
+Function;Stop Ana;Stop_Ana.lvclass;Ana;;;;;No;No
+Function;Open DIO;Open_Instr.lvclass;DIO;;;;;No;No
+***************************Print********************************
+*Main Test;Print Label;;;;;;;;
+*Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_CAB.lvclass;"<PathLabel>\\LabelPCBA.lbl";;;Yes;No

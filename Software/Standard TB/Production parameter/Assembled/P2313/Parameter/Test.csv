@@ -1,0 +1,8 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel;Mandatory
+***********************Test Weigth*******************************
+Main Test;Weight Test;;;;;;;;
+Function;Delay;Delay.lvclass;;;2000;;;Yes;No
+Test;Get Weight;Read_Weight.lvclass;Balance;;;40;2000;No;No
+**************************Print********************************
+Main Test;Print Label;;;;;;;;
+Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_CAB.lvclass;"<PathLabel>\\LabelPCBA.lbl";;;Yes;No

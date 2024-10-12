@@ -1,0 +1,91 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel;Mandatory
+***********************Init*******************************
+Main Test;Init;;;;;;;;
+Function;Alim UART;Enable_Relay.lvclass;Relay;;3;;;No;No
+Function;Enable UART;Enable_Relay.lvclass;Relay;;4;;;No;No
+Function;Enable PWR SIN;Enable_Relay.lvclass;Relay;;1;;;No;No
+Function;Enable Jack Product;Enable_Relay.lvclass;Relay;;6;;;No;No
+Function;Init Multi;Init_Multimeter.lvclass;Multi_Voltage;;{"Function":"Voltmeter","Range":220,"Voltage Type":"AC"};;;No;No
+Function;Init Multi;Init_Multimeter.lvclass;Multi_Current;;{"Function":"Ammeter","Range":5,"Voltage Type":"AC"};;;No;No
+*Function;Close Fixture;Wait_CloseFixture.lvclass;DIO;Class DIO NI.lvclass;{"Function":"Read","Information_Operator":"\n\nClose\nthe\nfixture","Line":0,"Ok_Button_Visible":false,"Path_Picture":"<PathParameter>\IHM Picture\Close_Fixture.bmp","Port":2,"Timeout (ms)":300000000};;;No;No
+Test;Close Fixture;Operator_Control.lvclass;;;{"Information_Operator":"\n\nClose\nthe\nfixture","Path_Picture":"<PathParameter>\IHM Picture\Close_Fixture.bmp"};;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+***********************Programming***************************
+Main Test;Programing;;;;;;;;
+*Function;Close UART;Close_Instr.lvclass;FTDI;;;;;No;No
+Function;Alim pwr;Enable_Relay.lvclass;Relay;;1;;;No;No
+Test;Flash FW;Flash_STM32.lvclass;;;{"Connection_Type":"SWD","Path FW":"<PathFW>\\FW","Working Directory":"C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin"};;;Yes;No
+*Function;Alim PWR;Disable_Relay.lvclass;Relay;;1;;;No;No
+*Function;Delay;Delay.lvclass;;;5000;;;No;No
+*Function;Alim pwr;Enable_Relay.lvclass;Relay;;1;;;No;No
+*Function;Close UART;Open_Instr.lvclass;FTDI;;;;;No;No
+***********************Setting*******************************
+Main Test;Setting;;;;;;;;
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Test;Write Product ID;Nodon_Set_Product_ID.lvclass;FTDI;;{"Product ID  (Hex)":"06"};;;No;No
+Test;Read Product ID;Nodon_Get_Product_ID.lvclass;FTDI;;;;;No;No
+Test;Write Brand ID;Nodon_Set_Brand_ID.lvclass;FTDI;;{"Brand ID  (Hex)":"02"};;;No;No
+Test;Read Brand ID;Nodon_Get_Brand_ID.lvclass;FTDI;;;;;No;No
+Test;FW Version;Nodon_Get_FW_Version.lvclass;FTDI;;;010404;010404;No;No
+Test;Write HW Version;Nodon_Set_HardwareVersion.lvclass;FTDI;;{"Version  (Hex)":"060505"};;;No;No
+Test;Read HW Version;Nodon_Get_HW_Version.lvclass;FTDI;;;;;No;No
+***********************Test Button*******************************
+Main Test;BP Test;;;;;;;;
+Function;Press Button;Enable_Relay.lvclass;Relay;;5;;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Test;Result Press;Nodon_Get_BP_Status.lvclass;FTDI;;;01;01;No;No
+Function;Release Button;Disable_Relay.lvclass;Relay;;5;;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Test;Result Press;Nodon_Get_BP_Status.lvclass;FTDI;;;02;02;No;No
+***********************Test Mode*******************************
+Main Test;Mode Test;;;;;;;;
+Function;Alim PWR;Disable_Relay.lvclass;Relay;;1;;;No;No
+Function;Delay;Delay.lvclass;;;2000;;;No;No
+Function;Alim pwr;Enable_Relay.lvclass;Relay;;1;;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Function;Enable Voltage FP;Disable_Relay.lvclass;Relay;;8;;;No;No
+*Test;Confort Mode;Nodon_Set_Fil_Pilote.lvclass;FTDI;;{"Mode (Hex)":"01"};;;No;No
+*Test;Value Confort;Read_Multimeter_Voltage.lvclass;Multi_Voltage;;;0;15;No;No
+Test;Eco Mode;Nodon_Set_Fil_Pilote.lvclass;FTDI;;{"Mode (Hex)":"02"};;;No;No
+Function;Delay;Delay.lvclass;;;2000;;;No;No
+Test;Value Eco;Read_Multimeter_Voltage.lvclass;Multi_Voltage;;;205;240;No;No
+*Test;frost-free Mode;Nodon_Set_Fil_Pilote.lvclass;FTDI;;{"Mode (Hex)":"03"};;;No;No
+*Test;Value frost-free;Read_Multimeter_Voltage.lvclass;Multi_Voltage;;;-205;120;No;No
+*Test;Off Mode;Nodon_Set_Fil_Pilote.lvclass;FTDI;;{"Mode (Hex)":"00"};;;No;No
+*Test;Value Off;Read_Multimeter_Voltage.lvclass;Multi_Voltage;;;0;15;No;No
+Test;Confort Mode;Nodon_Set_Fil_Pilote.lvclass;FTDI;;{"Mode (Hex)":"01"};;;No;No
+Function;Delay;Delay.lvclass;;;2000;;;No;No
+Test;Value Confort;Read_Multimeter_Voltage.lvclass;Multi_Voltage;;;0;15;No;No
+***********************Calibration*******************************
+Main Test;Calibration;;;;;;;;
+Function;Enable Load;Enable_Relay.lvclass;Relay;;7;;;No;No
+Function;Enable Voltage;Enable_Relay.lvclass;Relay;;8;;;No;No
+Function;Delay;Delay.lvclass;;;2000;;;No;No
+Test;Reset Calibration Voltage;Nodon_Reset_Voltage_Calibration.lvclass;FTDI;;;;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Test;Reset Calibration Current;Nodon_Reset_Current_Calibration.lvclass;FTDI;;;;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Test;Voltage;Read_Multimeter_Voltage.lvclass;Multi_Voltage;;;210;240;No;No
+Test;Current;Read_Multimeter_Current.lvclass;Multi_Current;;;3;6;No;No
+Test;Read Power;Nodon_Get_Power.lvclass;FTDI;;;-100;100;No;No
+Test;Voltage;Read_Multimeter_Voltage.lvclass;Multi_Voltage;;;210;240;No;No
+Test;Calibration Voltage;Nodon_Set_Voltage_Calibration.lvclass;FTDI;;;;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+Test;Current;Read_Multimeter_Current.lvclass;Multi_Current;;;3;6;No;No
+Test;Calibration Current;Nodon_Set_Current_Calibration.lvclass;FTDI;;;;;No;No
+Function;Delay;Delay.lvclass;;;1000;;;No;No
+*-----------------------Limit is pourcent of measure read----------------------
+Test;Read Power;Nodon_Get_Power.lvclass;FTDI;;;-4;4;No;No
+Test;Store Power;Nodon_Power.lvclass;;;;;;No;No
+*------------------------------------------------------------------------------
+Function;Disable Voltage;Disable_Relay.lvclass;Relay;;8;;;No;No
+Function;Disable Load;Disable_Relay.lvclass;Relay;;7;;;No;No
+**************************End********************************
+Main Test;End;;;;;;;;
+Function;Alim UART;Disable_Relay.lvclass;Relay;;3;;;No;No;Yes
+Function;Enable UART;Disable_Relay.lvclass;Relay;;4;;;No;No;Yes
+Function;Enable Jack Product;Disable_Relay.lvclass;Relay;;7;;;No;No;Yes
+Function;Enable Jack Product;Disable_Relay.lvclass;Relay;;6;;;No;No;Yes
+**************************Print********************************
+*Main Test;Print Label;;;;;;;;
+*Function;Print_Label;Print_Label.lvclass;Printer;Class Printer_CAB.lvclass;"<PathLabel>\\LabelPCBA.lbl";;;Yes;No

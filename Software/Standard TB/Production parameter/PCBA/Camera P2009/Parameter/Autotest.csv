@@ -1,0 +1,5 @@
+Name Instrument;Class Instr;Parameter Init (Json)
+Database;Firebase Benches.lvclass;{"Bench Type":"Bench Camera","API_Key":"AIzaSyBqKtdkTLYY_Y01O1JacaOhqOFChZShmvY","Name_BDD":"p2009-butagaz-smartlock-test"}
+Camera;Class Camera IV3-500CA.lvclass;{"Device_Addr":"169.254.101.102","Port":"8500"}
+Relay;Class Relay_Board usb_Relay_device.lvclass;{"Address Board":"2","Device_Com_Port":"QAAMZ"}
+*Printer;Class Printer_CAB.lvclass;"COM1";

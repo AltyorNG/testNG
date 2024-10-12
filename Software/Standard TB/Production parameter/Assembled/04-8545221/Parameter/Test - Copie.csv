@@ -1,0 +1,19 @@
+Type;Name test ;Function;Name_Instrument;Class_Instr;Parameter Data (Json);Limit Min;Limit Max;Fatal;Parallel
+Main Test;Flash Data;;;;;;;;
+Function;;Init_Power_Supply.lvclass;PowerSupply;Class Power_Supply Rigol DP800.lvclass;{"Channel":0,"Current":1,"Voltage":24};;;No;No
+Function;;Enable_Power_Supply.lvclass;PowerSupply;Class Power_Supply Rigol DP800.lvclass;;;;No;No
+Test;;Flash_AVRDUDE.lvclass;;;{"Device":"t10","Frequency":"93.75","Path FW ":"<PathFW>\\Avrdude","Working Directory":"<Path>\\Data"};;;Yes;No
+Main Test;Flash FW;;;;;;;;
+Test;;Flash_Jlink.lvclass;;;{"Connection_Type":"JTAG","Device":"CC2652R1F","Frequency":"4000","Path FW ":"<PathFW>\\FW","Working Directory":"<Path>\\JLink"};;;No;No
+Function;;Disable_Power_Supply.lvclass;PowerSupply;Class Power_Supply Rigol DP800.lvclass;;;;No;No
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;

@@ -1,0 +1,5 @@
+Name Instrument;Class Instr;Parameter Init (Json)
+Database;Database Altyor.lvclass;{"Connection Name ODBC":"BDDTestBench","DatabaseName":"bdd"}
+Spectrum;Class Spectrum_Analyser RS306B.lvclass;"GPIB8::1::INSTR"
+*DIO;Class DIO NI.lvclass;;;
+*Printer;Class Printer_CAB.lvclass;"COM1";
