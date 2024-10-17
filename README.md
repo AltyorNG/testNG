@@ -1,2 +1,3 @@
 # testNG
 INIT
+main
